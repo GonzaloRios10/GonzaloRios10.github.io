@@ -1,0 +1,581 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+	--colorPrimary: rgb(15, 13, 46);
+	--colorSecondary: rgb(255, 255, 255);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--colorPrimary); 
+}
+
+/*Header*/
+
+header {
+	position: fixed;
+	width: 100%;
+	background: var(--colorPrimary);
+	z-index: 1;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.container-header {
+	max-width: 960px;
+	width: 100%;
+	margin: auto;
+}
+
+.container {
+	max-width: 960px;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 1.5rem;
+}
+
+#logo {
+	width: 80px;
+	filter: invert(100%); 
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar li {
+	list-style: none;
+}
+
+.navbar li a {
+	text-decoration: none;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	column-gap: 1.5rem;
+}
+
+.nav-link {
+	font-size: 1rem;
+	padding: 4px 8px;
+	border-radius: 0.2rem;
+	color: var(--colorSecondary);
+}
+
+.nav-link:hover {
+	color: dodgerBlue;
+	transition: 0.3s all linear;
+}
+
+.menu-icon {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	row-gap: 5px;
+	z-index: 200;
+	transition: 0.3s;
+}
+
+.menu-icon div {
+	display: block;
+	background: var(--colorSecondary);
+	height: 2px;
+	width: 24px; 
+	transition: 0.3s;
+}
+
+.move .line1 {
+	transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move .line2 {
+	opacity: 0;
+}
+
+.move .line3 {
+	transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/*Home*/
+
+.home {
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2rem;
+}
+
+.home-content {
+	position: relative;
+	max-width: 600px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-img img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+	border-radius: 45%;
+}
+
+.home-img {
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.home-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.home-text h3 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	color: var(--colorSecondary);
+}
+
+.home-text h3::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%);
+	left: -15px;
+	width: 20px;
+	height: 2px;
+	background: dodgerBlue;
+}
+
+.home-text h3::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%);
+	right: -35px;
+	width: 20px;
+	height: 2px;
+	background: dodgerBlue;
+}
+
+.home-text h2 { 
+	color: var(--colorSecondary);
+}
+
+.home-text p {
+	margin-top: 8px;
+	color: var(--colorSecondary);
+	padding-bottom: 8px;
+}
+
+.social-media {
+	display: flex;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+
+.social-media i {
+	padding: 10px;
+	font-size: 2.5rem;
+	border-radius: 50%;
+	color: var(--colorSecondary);
+}
+
+.social-media i:hover {
+	color: dodgerBlue;
+	transition: 0.3s all linear;
+}
+
+.heading {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	color: var(--colorSecondary);
+}
+
+/*About me*/
+
+.about-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+}
+
+.about-data span {
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: dodgerBlue;
+}
+
+.about-data h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 2.6rem;
+	margin: 1rem 0;
+	color: var(--colorSecondary);
+}
+
+.btn-cv {
+	background: dodgerBlue;
+	color: var(--colorSecondary);
+	margin-left: 5px;
+	margin-top: 25px;
+	padding: 10px;
+	width: 45%;
+	border: none;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+.btn-cv:hover {
+	background: rgb(41, 101, 179);
+	transition: 0.3s all linear;
+}
+
+.about-text p {
+	font-size: 0.938rem;
+	letter-spacing: 1px;
+	text-align: justify;
+	margin-bottom: 1rem;
+	color: var(--colorSecondary);
+}
+
+/*Services*/
+
+.services-content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	color: var(--colorSecondary);
+}
+
+.services-box {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+	border-radius: 0.4rem;
+	transition: 0.5s all ease;
+	border-color: var(--colorSecondary);
+}
+
+.services-box:hover {
+	transform: scale(1.05);
+	transition: 0.5s all ease;
+	border-color: dodgerBlue;
+}
+
+.services-box i {
+	font-size: 1.4rem;
+	padding: 10px;
+	border-radius: 5rem;
+	border: 2px dashed var(--colorSecondary);;
+}
+
+.services-box:hover i {
+  	border-color: dodgerBlue;
+	color: dodgerBlue;
+}
+
+.services-box p {
+	font-size: 0.9rem;
+}
+
+/*Projects*/
+
+.projects {
+	margin-top: 20px;
+}
+
+.projects-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.projects-box {
+	position: relative;
+	width: 100%;
+	height: 320px;
+	border-radius: 1rem;
+	overflow: hidden;
+	border: 1px solid black;
+}
+
+.projects-box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.projects-overlay {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: hsl(234, 45%, 16%, 0.7);
+}
+
+.projects-overlay h2 {
+	color: rgb(255, 255, 255);
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.icon-links a {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.projects-overlay i {
+	font-size: 24px;
+	padding: 10px;
+	color: var(--colorSecondary);
+}
+
+.projects-overlay i:hover {
+	color: dodgerBlue;
+	transition: 0.3 all linear;
+}
+
+.projects-box:hover .projects-overlay {
+	top: 0;
+	transition: 0.3s all ease;
+}
+
+/**/
+
+.reviews {
+	margin-top: 20px;
+}
+
+.reviews-content {
+	width: 100%;
+	height: 200px;
+	border: 1px solid black;
+	margin-bottom: 50px;
+}
+
+/*Footer*/
+
+.footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	row-gap: 1.4rem;
+	padding: 30px 0;
+}
+
+.footer p {
+	color: var(--colorSecondary);
+}
+
+.footer-links {
+	display: flex;
+	align-items: center;
+	column-gap: 1rem;
+}
+
+.footer-links a {
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--colorSecondary);
+	text-decoration: none;
+}
+
+.footer-links a:hover {
+	color: dodgerBlue;
+	transition: 0.3s all linear;
+}
+
+/*Scroll*/
+
+.scroll-top {
+	position: fixed;
+	right: 1.5rem;
+	transition: 0.3s;
+}
+
+.scroll-top i {
+	padding: 8px;
+	font-size: 2rem;
+	color: var(--colorSecondary);
+}
+
+.scroll-top i:hover {
+	color: dodgerBlue;
+	transition: 0.3s all linear;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 990px) {
+	* {
+
+	}
+
+	.container {
+		margin: 0 auto;
+		width: 95%;
+		margin-bottom: 2rem;
+	}
+
+	section {
+		padding: 0px 25px;
+	}
+
+	.navbar {
+		position: absolute;
+		top: 0;
+		right: -100%;
+		width: 300px;
+		height: 100vh;
+		background: var(--colorPrimary);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 50px 20px;
+		transition: 0.5s;
+	}
+
+	.nav-link {
+		font-size: 1.5rem;
+	}
+
+	header {
+		margin-top: -1px;
+		height: 7rem;
+	}
+
+	#logo {
+		width: 105px;
+	}
+
+	.menu-icon {
+		display: flex;
+	}
+
+	.open-menu {
+		right: 0;
+		transition: 0.5s;
+	}
+
+	.nav-link {
+		display: block;
+		margin: 1rem 0;
+	}
+
+	.home {
+    	padding-top: 4rem;
+	}
+
+	.home-text h3 {
+		font-size: 2rem;
+	}
+
+	.home-text h2 {
+		width: 100%;
+		font-size: 2rem;
+	}
+
+	.home-text p {
+		font-size: 1.2rem;
+		padding-bottom: 10px;
+	}
+
+	.social-media i {
+		font-size: 3.5rem;
+	}
+
+	/*About me*/
+
+	.about-data span {
+		font-size: 0.5rem;
+	}
+
+	.about-data h2 {
+		font-size: 0.8rem;
+	}
+
+	.btn-cv {
+		font-size: 0.8rem;
+	}
+
+	.about-text p {
+		text-align: left;
+		font-size: 0.7rem;
+	}
+
+	/*Services*/
+
+	.services-content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.services-box {
+		padding: 10px;
+	}
+
+	.services-box i {
+		font-size: 2rem;
+		padding: 10px;
+		border-radius: 5rem;
+		border: 2px dashed var(--colorSecondary);;
+	}
+
+	.services-box:hover i {
+	  	border-color: dodgerBlue;
+		color: dodgerBlue;
+	}
+
+	.services-box p {
+		font-size: 1.6rem;
+	}	
+
+	.projects-box {
+		height: 257px;
+	}
+
+}
+
+
+/*@media (max-width: 892px) {
+	
+}*/
+
+
+
+
