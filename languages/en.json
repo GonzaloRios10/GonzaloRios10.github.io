@@ -1,0 +1,44 @@
+{
+	"header": {
+		"inicio": "Home",
+		"sobre mi": "About Me",
+		"servicios": "Services",
+		"proyectos": "Projects",
+		"contacto": "Contact"
+	},
+	"home": {
+		"saludo": "Hello!👋",
+		"nombre": "I'm Gonzalo",
+		"descripcion": "Enthusiast of analysis and programming, always looking for new challenges to grow personally and professionally in the exciting IT world. With a positive attitude and an open mind, I am ready to face any obstacle and make the most of the opportunities that arise in the IT field."
+	},
+	"heading": {
+		"sobre mi": "About Me",
+		"servicios": "Services",
+		"proyectos": "Projects"
+	},
+	"about me": {
+		"rol": "Téc. Analyst Programmer / Community Manager",
+		"cv": "Download CV ⬇",
+		"p1": "I currently reside in Posadas, Misiones (Argentina), where I am in the last year of my Systems Analysis degree, which gives me a solid foundation in technology.",
+		"p2": "My trajectory in the IT world has led me to acquire skills in various technologies through courses and self-learning.",
+		"p3": "My approach to any challenge is to always look for innovative and effective solutions, while collaborating as a team to achieve exceptional results."
+	},
+	"services": {
+		"h2 analisis": "Analysis",
+		"p analisis": "I identify customer needs and transform them into detailed technical specifications. I focus on getting to know the processes in depth to design effective solutions.",
+		
+		"h2 desarrollo": "Development",
+		"p desarrollo" : "I translate specifications into functional and efficient code. My goal is to deliver solutions that meet quality standards and satisfy the customer's expectations.",
+		
+		"h2 mantenimiento" : "Maintenance",
+		"p mantenimiento": "I perform comprehensive maintenance of computer systems development and hardware equipment. From optimization and updates of operating systems to cleaning and technical adjustments."
+	},
+	"projects": {
+		"h2 calculadora": "Web Calculator",
+		"h2 tienda online": "Online Store - E-Commerce",
+		"h2 gestion medica": "Medical Management"
+	},
+	"footer": {
+		"p text": "Share your idea with me and let's work together!"
+	}
+}

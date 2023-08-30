@@ -1,0 +1,44 @@
+{
+	"header": {
+		"inicio": "Inicio",
+		"sobre mi": "Sobre Mi",
+		"servicios": "Servicios",
+		"proyectos": "Proyectos",
+		"contacto": "Contacto"
+	},
+	"home": {
+		"saludo": "Hola!👋",
+		"nombre": "Soy Gonzalo",
+		"descripcion": "Entusiasta del analisis y la programación, siempre en busca de nuevos retos para crecer personal y profesionalmente en el apasionante mundo IT. Con una actitud positiva y una mente abierta, estoy preparado para afrontar cualquier obstáculo y aprovechar al máximo las oportunidades que surjan en el campo de la informática."
+	},
+	"heading": {
+		"sobre mi": "Sobre Mi",
+		"servicios": "Servicios",
+		"proyectos": "Proyectos"
+	},
+	"about me": {
+		"rol": "Téc. Analista Programador / Community Manager",
+		"cv": "Descargar CV ⬇",
+		"p1": "Actualmente resido en Posadas, Misiones (Argentina), donde estoy cursando el último año de la carrera de Análisis de Sistemas, lo que me brinda una sólida base en tecnología.",
+		"p2": "Mi trayectoria en el mundo IT me ha llevado a adquirir competencias en diversas tecnologías a través de cursos y del autoaprendizaje.",
+		"p3": "Mi enfoque ante cualquier reto es buscar siempre soluciones innovadoras y eficaces, colaborando al mismo tiempo en equipo para lograr resultados excepcionales."
+	},
+	"services": {
+		"h2 analisis": "Analisis",
+		"p analisis": "Identifico las necesidades del cliente y las transformo en especificaciones técnicas detalladas. Me centro en conocer a fondo los procesos para diseñar soluciones eficaces.",
+		
+		"h2 desarrollo": "Desarrollo",
+		"p desarrollo" : "Traduzco las especificaciones en código funcional y eficiente. Mi objetivo es ofrecer soluciones que cumplan los estándares de calidad y satisfagan las expectativas del cliente.",
+		
+		"h2 mantenimiento": "Mantenimiento",
+		"p mantenimiento": "Realizo mantenimiento integral de desarrollo de sistemas informáticos y equipos hardware. Desde optimización y actualizaciones de sistemas operativos hasta limpieza y ajustes técnicos."
+	},
+	"projects": {
+		"h2 calculadora": "Calculadora Web",
+		"h2 tienda online": "Tienda Online - E-Commerce",
+		"h2 gestion medica": "Gestion Medica"
+	},
+	"footer": {
+		"p text": "Comparte tu idea conmigo y trabajemos juntos!"
+	}
+}

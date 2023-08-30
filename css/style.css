@@ -438,12 +438,33 @@ header {
 	transition: 0.3s all linear;
 }
 
+/*Multi Idioma*/
+
+.flags {
+	display: flex;
+	width: 75px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flags__item {
+	width: 30px;
+}
+
+.flags__img {
+	display: block;
+	cursor: pointer;
+}
 
 /*Responsive*/
 
 @media (max-width: 990px) {
 	* {
 
+	}
+
+	.flags {
+		margin-right: 4rem;
 	}
 
 	.container {

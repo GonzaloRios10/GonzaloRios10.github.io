@@ -17,12 +17,21 @@
 		<div class="nav container-header">
 			<img src="images/Logo.png" id="logo">
 			<ul class="navbar">
-				<li><a href="#home" class="nav-link">Inicio</a></li>
-				<li><a href="#about-me" class="nav-link">Sobre Mi</a></li>
-				<li><a href="#services" class="nav-link">Servicios</a></li>
-				<li><a href="#projects" class="nav-link">Proyectos</a></li>
-				<li><a href="#contact" class="nav-link">Contacto</a></li>
+				<li><a href="#home" class="nav-link" data-section="header" data-value="inicio">Inicio</a></li>
+				<li><a href="#about-me" class="nav-link" data-section="header" data-value="sobre mi">Sobre Mi</a></li>
+				<li><a href="#services" class="nav-link" data-section="header" data-value="servicios">Servicios</a></li>
+				<li><a href="#projects" class="nav-link" data-section="header" data-value="proyectos">Proyectos</a></li>
+				<li><a href="#contact" class="nav-link" data-section="header" data-value="contacto">Contacto</a></li>
 			</ul>
+
+			<div id="flags" class="flags">
+				<div class="flags__item" data-language="es">
+					<img src="images/españa.svg" class="flags__img">
+				</div>
+				<div class="flags__item" data-language="en">
+					<img src="images/unitedkingdom.svg" class="flags__img">
+				</div>
+			</div>
 
 			<div class="menu-icon">
 				<div class="line1"></div>
@@ -38,9 +47,9 @@
 				<img src="images/foto-perfil.png">
 			</div>
 			<div class="home-text">
-				<h3>Hola!👋</h3>
-				<h2>Soy Gonzalo</h2>
-				<p>
+				<h3  data-section="home" data-value="saludo">Hola!👋</h3>
+				<h2 data-section="home" data-value="nombre">Soy Gonzalo</h2>
+				<p data-section="home" data-value="descripcion">
 					Entusiasta del analisis y la programación, siempre en busca de nuevos retos para crecer personal y profesionalmente en el apasionante mundo IT. Con una actitud positiva y una mente abierta, estoy preparado para afrontar cualquier obstáculo y aprovechar al máximo las oportunidades que surjan en el campo de la informática.
 				</p>
 
@@ -54,24 +63,24 @@
 	</section>
 
 	<section class="about container" id="about-me">
-		<h2 class="heading">Sobre mi</h2>
+		<h2 class="heading" data-section="heading" data-value="sobre mi">Sobre mi</h2>
 		<div class="about-content">
 			<div class="about-data">
 				<span>Datos</span>
-				<h2>Téc. Analista Programador / Community Manager</h2>
-				<a href="Rios Gonzalo Agustin - CV Part Time.pdf" class="btn-cv" download="">
-					Descargar CV
-					<i class="fa-solid fa-file-arrow-down"></i>
+				<h2 data-section="about me" data-value="rol">Téc. Analista Programador / Community Manager</h2>
+				<a href="Rios Gonzalo Agustin - CV Part Time.pdf" class="btn-cv" download="" data-section="about me" data-value="cv">
+					Descargar CV ⬇
+					<!-- <i class="fa-solid fa-file-arrow-down"></i> -->
 				</a>
 			</div>
 			<div class="about-text">
-				<p>
+				<p data-section="about me" data-value="p1">
 					Actualmente resido en Posadas, Misiones (Argentina), donde estoy cursando el último año de la carrera de Análisis de Sistemas, lo que me brinda una sólida base en tecnología.
 				</p>
-				<p>
+				<p data-section="about me" data-value="p2">
 					Mi trayectoria en el mundo IT me ha llevado a adquirir competencias en diversas tecnologías a través de cursos y del autoaprendizaje.
 				</p>
-				<p>
+				<p data-section="about me" data-value="p3">
 					Mi enfoque ante cualquier reto es buscar siempre soluciones innovadoras y eficaces, colaborando al mismo tiempo en equipo para lograr resultados excepcionales.
 				</p>
 			</div>
@@ -79,26 +88,26 @@
 	</section>
 
 	<section class="services container" id="services">
-		<h2 class="heading">Servicios</h2>
+		<h2 class="heading" data-section="heading" data-value="servicios">Servicios</h2>
 		<div class="services-content">
 			<div class="services-box">
 				<i class="fa-solid fa-chart-line"></i>
-				<h2>Analisis</h2>
-				<p>
+				<h2 data-section="services" data-value="h2 analisis">Analisis</h2>
+				<p data-section="services" data-value="p analisis">
 					Identifico las necesidades del cliente y las transformo en especificaciones técnicas detalladas. Me centro en conocer a fondo los procesos para diseñar soluciones eficaces.
 				</p>
 			</div>
 			<div class="services-box">
 				<i class="fa-solid fa-laptop-code"></i>
-				<h2>Desarrollo</h2>
-				<p>
+				<h2 data-section="services" data-value="h2 desarrollo">Desarrollo</h2>
+				<p data-section="services" data-value="p desarrollo">
 					Traduzco las especificaciones en código funcional y eficiente. Mi objetivo es ofrecer soluciones que cumplan los estándares de calidad y satisfagan las expectativas del cliente.
 				</p>
 			</div>
 			<div class="services-box">
 				<i class="fa-solid fa-screwdriver-wrench"></i>
-				<h2>Mantenimiento</h2>
-				<p>
+				<h2 data-section="services" data-value="h2 mantenimiento">Mantenimiento</h2>
+				<p data-section="services" data-value="p mantenimiento">
 					Realizo mantenimiento integral de desarrollo de sistemas informáticos y equipos hardware. Desde optimización y actualizaciones de sistemas operativos hasta limpieza y ajustes técnicos.
 				</p>
 			</div>
@@ -106,12 +115,12 @@
 	</section>
 
 	<section class="projects container" id="projects">
-		<h2 class="heading">Proyectos</h2>
+		<h2 class="heading" data-section="heading" data-value="proyectos">Proyectos</h2>
 		<div class="projects-content">
 			<div class="projects-box">
 				<img src="images/CalculadoraWeb.png">
 				<div class="projects-overlay">
-					<h2>Calculadora Web</h2>
+					<h2 data-section="projects" data-value="h2 calculadora">Calculadora Web</h2>
 					<div class="icon-links">
 			            <a href="#">
 			                <i class="fa-solid fa-link"></i>
@@ -125,7 +134,7 @@
 			<div class="projects-box">
 				<img src="images/ElectronicaSyS.jpeg">
 				<div class="projects-overlay">
-					<h2>Tienda Online - E-Commerce</h2>
+					<h2 data-section="projects" data-value="h2 tienda online">Tienda Online - E-Commerce</h2>
 					<div class="icon-links">
 			            <a href="#">
 			                <i class="fa-solid fa-link"></i>
@@ -139,7 +148,7 @@
 			<div class="projects-box">
 				<img src="images/GestionMedica.jpeg">
 				<div class="projects-overlay">
-					<h2>Gestion Medica</h2>
+					<h2 data-section="projects" data-value="h2 gestion medica">Gestion Medica</h2>
 					<div class="icon-links">
 			            <a href="#">
 			                <i class="fa-solid fa-link"></i>
@@ -210,7 +219,7 @@
 			<!-- <a href="#">Privacy policy</a>
 			<a href="#">Terms Of use</a>
 			<a href="#">nashe</a> -->
-			<p>Comparte tu idea conmigo y trabajemos juntos!</p>
+			<p data-section="footer" data-value="p text">Comparte tu idea conmigo y trabajemos juntos!</p>
 		</div>
 		<p>&#169; Copyright | Developed by RGAcode</p>
 	</section>

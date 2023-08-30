@@ -1,3 +1,4 @@
+//Menu Icono
 let menu = document.querySelector('.menu-icon');
 
 let navbar = document.querySelector('.navbar');
@@ -7,6 +8,7 @@ menu.onclick = () => {
 	menu.classList.toggle("move");
 }
 
+//Swiper Liberia
 var swiper = new Swiper(".reviews-content", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -18,6 +20,27 @@ var swiper = new Swiper(".reviews-content", {
         el: ".swiper-pagination",
         clickable: true,
     },      
+});
+
+// Cambio de idiomas
+const flagsElement = document.getElementById("flags");
+
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async (language) => {
+  const requestJson = await fetch(`./languages/${language}.json`);
+  const texts = await requestJson.json();
+
+  for(const textToChange of textsToChange) {
+    const section = textToChange.dataset.section;
+    const value = textToChange.dataset.value;
+
+    textToChange.innerHTML = texts[section][value];
+  }
+}
+
+flagsElement.addEventListener("click", (e) => {
+  changeLanguage(e.target.parentElement.dataset.language);
 });
 
 //Scroll
