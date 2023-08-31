@@ -89,13 +89,13 @@ header {
 .menu-icon div {
 	display: block;
 	background: var(--colorSecondary);
-	height: 2px;
-	width: 24px; 
+	height: 4px;
+	width: 34px; 
 	transition: 0.3s;
 }
 
 .move .line1 {
-	transform: rotate(-45deg) translate(-5px, 5px);
+	transform: rotate(-45deg) translate(-6.4px, 6.4px);
 }
 
 .move .line2 {
@@ -103,7 +103,7 @@ header {
 }
 
 .move .line3 {
-	transform: rotate(45deg) translate(-5px, -5px);
+	transform: rotate(45deg) translate(-6.4px, -6.4px);
 }
 
 /*Home*/
@@ -463,8 +463,11 @@ header {
 
 	}
 
-	.flags {
-		margin-right: 4rem;
+	/*Header*/
+	
+	header {
+		margin-top: -1px;
+		height: 7rem;
 	}
 
 	.container {
@@ -495,11 +498,6 @@ header {
 		font-size: 1.5rem;
 	}
 
-	header {
-		margin-top: -1px;
-		height: 7rem;
-	}
-
 	#logo {
 		width: 105px;
 	}
@@ -518,6 +516,8 @@ header {
 		margin: 1rem 0;
 	}
 
+	/*Home*/
+
 	.home {
     	padding-top: 4rem;
 	}
@@ -532,7 +532,7 @@ header {
 	}
 
 	.home-text p {
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 		padding-bottom: 10px;
 	}
 
@@ -556,7 +556,7 @@ header {
 
 	.about-text p {
 		text-align: left;
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 	}
 
 	/*Services*/
@@ -586,8 +586,33 @@ header {
 		font-size: 1.6rem;
 	}	
 
+	/*Projects*/
+
 	.projects-box {
 		height: 257px;
+	}
+
+	/*Scroll*/
+
+	.scroll-top i {
+		font-size: 3rem;
+	}
+
+	/*Flags*/
+
+	.flags {
+		margin-right: 4rem;
+		width: 115px;
+	}
+
+	.flags__item {
+		width: 50px;
+	}	
+
+	/*Footer*/
+
+	.footer p {
+		font-size: 1.5rem;
 	}
 
 }
