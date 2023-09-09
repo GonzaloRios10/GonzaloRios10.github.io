@@ -18,7 +18,7 @@
 	},
 	"about me": {
 		"rol": "Téc. Analyst Programmer / Community Manager",
-		"cv": "Download CV ⬇",
+		"cv": "Download CV",
 		"p1": "I currently reside in Posadas, Misiones (Argentina), where I am in the last year of my Systems Analysis degree, which gives me a solid foundation in technology.",
 		"p2": "My trajectory in the IT world has led me to acquire skills in various technologies through courses and self-learning.",
 		"p3": "My approach to any challenge is to always look for innovative and effective solutions, while collaborating as a team to achieve exceptional results."
@@ -35,8 +35,16 @@
 	},
 	"projects": {
 		"h2 calculadora": "Web Calculator",
+		"p calculadora": "Web Calculator for Mathematical operations. Which performs addition, subtraction, division and multiplication operations.",
+		
 		"h2 tienda online": "Online Store - E-Commerce",
-		"h2 gestion medica": "Medical Management"
+		"p tienda online": "Online sales platform for e-commerce. In which different modules of administration, sales and stock control were included. In addition, the Mercado Pago API was implemented as a payment method to offer customers a secure shopping experience.",
+		
+		"h2 gestion medica": "Medical Management",
+		"p gestion medica": "Web system designed to meet the needs of a professional clinic, providing comprehensive tools for efficient management. It includes essential functions such as appointment scheduling, registration and access to patient records, and an online messaging platform for effective communication between medical staff and patients.",
+		
+		"h2 gimnasio": "Virtual Gym",
+		"p gimnasio": "Project developed for a gym, providing a complete set of tools for both the instructor and his clients. It includes features such as the management of training routines and nutrition with the objective of offering an integral and effective experience for all users."
 	},
 	"footer": {
 		"p text": "Share your idea with me and let's work together!"

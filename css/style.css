@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Montserrat';
 }
 
 :root {
@@ -39,6 +41,7 @@ header {
 }
 
 #logo {
+	cursor: pointer;
 	width: 80px;
 	filter: invert(100%); 
 }
@@ -64,6 +67,7 @@ header {
 }
 
 .nav-link {
+	text-transform: uppercase;
 	font-size: 1rem;
 	padding: 4px 8px;
 	border-radius: 0.2rem;
@@ -109,11 +113,16 @@ header {
 /*Home*/
 
 .home {
-	min-height: 600px;
+	min-height: 200px;
+	max-width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding-top: 2rem;
+	background-image: url(../images/snippetset2.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .home-content {
@@ -346,10 +355,16 @@ header {
 }
 
 .projects-overlay h2 {
-	color: rgb(255, 255, 255);
+	color: var(--colorSecondary);
 	font-size: 1.6rem;
 	font-weight: 600;
 	margin-bottom: 10px;
+}
+
+.projects-overlay p {
+	text-align: justify;
+	color: var(--colorSecondary);
+	padding: 0px 10px 10px 10px;
 }
 
 .icon-links a {
@@ -454,6 +469,12 @@ header {
 .flags__img {
 	display: block;
 	cursor: pointer;
+	border-radius: 100%;
+	filter: grayscale(100%); 
+}
+
+.flags__img:hover {
+	filter: grayscale(0%); 
 }
 
 /*Responsive*/
