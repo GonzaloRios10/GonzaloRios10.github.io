@@ -41,7 +41,7 @@
 		"p tienda online": "Plataforma de venta online para comercio electrónico. En la que se incluyeron diferentes módulos de administración, ventas y control de stock. Además, se implementó la API de Mercado Pago como medio de pago para ofrecer a los clientes una experiencia de compra segura.",
 		
 		"h2 gestion medica": "Gestión Médica",
-		"p gestion medica": "Sistema web diseñado para satisfacer las necesidades de una clínica profesional, proporcionando herramientas integrales para una gestión eficiente. Incluye funciones esenciales como la programación de citas, el registro y el acceso a los historiales de los pacientes, y una plataforma de mensajería en línea para una comunicación eficaz entre el personal médico y los pacientes.",
+		"p gestion medica": "Sistema web para una clínica profesional medica. El mismo incluye funciones esenciales como programación de turnos, registro y acceso a historiales clínicos de pacientes, y una plataforma de mensajería en línea para el personal médico y sus pacientes.",
 		
 		"h2 gimnasio": "Gimnasio Virtual",
 		"p gimnasio": "Proyecto desarrollado para un gimnasio, proporcionando un completo conjunto de herramientas tanto para el instructor como para sus clientes. Incluye funcionalidades como la gestión de rutinas de entrenamiento y nutrición con el objetivo de ofrecer una experiencia integral y efectiva para todos los usuarios."
