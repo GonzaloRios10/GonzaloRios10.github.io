@@ -17,7 +17,7 @@
 		"proyectos": "Proyectos"
 	},
 	"about me": {
-		"rol": "Téc. Analista Programador / Community Manager",
+		"rol": "Téc. Analista en Sistemas / Analista Programador ",
 		"cv": "Descargar CV",
 		"p1": "Actualmente resido en Posadas, Misiones (Argentina), donde estoy cursando el último año de la carrera de Análisis de Sistemas, lo que me brinda una sólida base en tecnología.",
 		"p2": "Mi trayectoria en el mundo IT me ha llevado a adquirir competencias en diversas tecnologías a través de cursos y del autoaprendizaje.",
@@ -34,17 +34,17 @@
 		"p mantenimiento": "Realizo mantenimiento integral de desarrollo de sistemas informáticos y equipos hardware. Desde optimización y actualizaciones de sistemas operativos hasta limpieza y ajustes técnicos."
 	},
 	"projects": {
-		"h2 calculadora": "Calculadora Web",
-		"p calculadora": "Calculadora web para operaciones matemáticas. Que realiza operaciones de suma, resta, división y multiplicación",
+		"h2 calculadora": "Calculadora",
+		"p calculadora": "Calculadora web para operaciones Matemáticas. La cual realiza operaciones de Suma, resta, division y multiplicacion.",
 		
 		"h2 tienda online": "Tienda online - E-Commerce",
-		"p tienda online": "Plataforma de venta online para comercio electrónico. En la que se incluyeron diferentes módulos de administración, ventas y control de stock. Además, se implementó la API de Mercado Pago como medio de pago para ofrecer a los clientes una experiencia de compra segura.",
+		"p tienda online": "Plataforma en linea de ventas para comercio de productos electronicos. En el cual se incluyeron diferentes modulos de administración, ventas y control de stock. Además se implemento la API de Mercado Pago como método de pago para ofrecer a los clientes una experiencia de compra segura.",
 		
 		"h2 gestion medica": "Gestión Médica",
 		"p gestion medica": "Sistema web para una clínica profesional medica. El mismo incluye funciones esenciales como programación de turnos, registro y acceso a historiales clínicos de pacientes, y una plataforma de mensajería en línea para el personal médico y sus pacientes.",
 		
 		"h2 gimnasio": "Gimnasio Virtual",
-		"p gimnasio": "Proyecto desarrollado para un gimnasio, proporcionando un completo conjunto de herramientas tanto para el instructor como para sus clientes. Incluye funcionalidades como la gestión de rutinas de entrenamiento y nutrición con el objetivo de ofrecer una experiencia integral y efectiva para todos los usuarios."
+		"p gimnasio": "Proyecto desarrollado para un gimnasio, brindando un conjunto completo de herramientas tanto para el profesor como para sus clientes. Incluye caracteristicas como la gestión de rutinas de entrenamiento y nutrición con el objetivo de ofrecer una experiencia integral y efectiva para todos los usuarios."
 	},
 	"footer": {
 		"p text": "Comparte tu idea conmigo y trabajemos juntos!"
