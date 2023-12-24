@@ -116,37 +116,44 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Selecciona todos los elementos de ancla dentro de elementos de lista en la barra de navegación.
   const navLinks = document.querySelectorAll(".navbar li a");
 
-  // Adjunta un event listener de desplazamiento a la ventana.
-  window.addEventListener("scroll", function () {
+  function updateActiveLink() {
     // Obtiene la posición vertical actual de desplazamiento.
     const scrollPosition = window.scrollY;
-
+  
     // Itera sobre cada enlace de navegación.
     navLinks.forEach(function (link) {
       // Obtiene el valor del atributo "href" del enlace actual.
-      var sectionId = link.getAttribute('href');
-
+      const sectionId = link.getAttribute('href').substring(1); // Elimina el símbolo '#' del href
       // Encuentra la sección objetivo en el HTML basándose en el ID de la sección.
-      var targetSection = document.querySelector(sectionId);
-
-      // Calcula el desplazamiento para la sección objetivo actual, considerando la altura del encabezado.
-      var rect = targetSection.getBoundingClientRect();
-      var offset = rect.top + scrollPosition - document.querySelector('.container-header').offsetHeight;
-
-      // Verifica si la sección actual está en la vista.
-      if (offset <= scrollPosition && offset + rect.height > scrollPosition) {
-        // Agrega la clase 'active' al enlace si está en la vista.
-        link.classList.add('active');
-      } else {
-        // Elimina la clase 'active' si la sección no está en la vista.
-        link.classList.remove('active');
+      const targetSection = document.getElementById(sectionId);
+  
+      if (targetSection) {
+        // Obtiene la posición y dimensiones de la sección objetivo.
+        const rect = targetSection.getBoundingClientRect();
+        // Calcula el desplazamiento para la sección objetivo actual, considerando la altura del encabezado.
+        const offset = rect.top + scrollPosition - document.querySelector('.container-header').offsetHeight;
+  
+        // Verifica si la sección actual está en la vista.
+        if (offset <= scrollPosition && offset + rect.height > scrollPosition) {
+          // Agrega la clase 'active' al enlace si está en la vista.
+          link.classList.add('active');
+        } else {
+          // Elimina la clase 'active' si la sección no está en la vista.
+          link.classList.remove('active');
+        }
       }
     });
-  });
+  }
+
+  // Llama a la función para aplicar el marcado inicial
+  updateActiveLink();
+
+  // Adjunta el event listener de desplazamiento a la ventana
+  window.addEventListener("scroll", updateActiveLink);
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
   const darkMode = document.getElementById("logo");
