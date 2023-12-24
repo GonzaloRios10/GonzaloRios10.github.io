@@ -18,23 +18,23 @@
 	},
 	"about me": {
 		"rol": "Systems Analyst Technician / Programmer Analyst",
-		"cv": "Download CV",
-		"p1": "I currently reside in Posadas, Misiones (Argentina), where I am in the last year of my Systems Analysis degree, which gives me a solid foundation in technology.",
-		"p2": "My trajectory in the IT world has led me to acquire skills in various technologies through courses and self-learning.",
-		"p3": "My approach to any challenge is to always look for innovative and effective solutions, while collaborating as a team to achieve exceptional results."
+		"cv": "Download CV ↓",
+		"p1": "I am currently living in Posadas, Misiones (Argentina), where I am finishing the final stage of my degree in Systems Analysis.",
+		"p2": "My journey as a student in the IT world has allowed me to acquire knowledge in various technologies through my career, different courses and self-learning.",
+		"p3": "My approach to any problem is to always seek innovative and effective solutions, while collaborating as a team to achieve outstanding results."
 	},
 	"services": {
 		"h2 analisis": "Analysis",
-		"p analisis": "I identify customer needs and transform them into detailed technical specifications. I focus on getting to know the processes in depth to design effective solutions.",
+		"p analisis": "I identify customer needs and translate them into comprehensive technical specifications. My focus is on designing effective solutions that serve as a solid foundation for further development.",
 		
 		"h2 desarrollo": "Development",
-		"p desarrollo" : "I translate specifications into functional and efficient code. My goal is to deliver solutions that meet quality standards and satisfy the customer's expectations.",
+		"p desarrollo" : "I translate specifications into functional and efficient code. My goal is to deliver solutions that meet quality standards and satisfy customer expectations.",
 		
-		"h2 mantenimiento" : "Maintenance",
-		"p mantenimiento": "I perform comprehensive maintenance of computer systems development and hardware equipment. From optimization and updates of operating systems to cleaning and technical adjustments."
+		"h2 mantenimiento" : "Maintenance & Support",
+		"p mantenimiento": "I offer hardware maintenance for computer equipment and also provide dedicated support for the systems I develop, ensuring efficient long-term performance."
 	},
 	"projects": {
-		"h2 calculadora": "Web Calculator",
+		"h2 calculadora": "Calculator",
 		"p calculadora": "Web calculator for mathematical operations. Which performs operations of addition, subtraction, division and multiplication.",
 		
 		"h2 tienda online": "Online Store - E-Commerce",

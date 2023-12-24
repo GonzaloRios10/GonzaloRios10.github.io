@@ -18,6 +18,29 @@ body {
 	padding: 0;
 }
 
+body.dark-mode {
+	background-color: rgb(0, 0, 0);
+}
+
+body.dark-mode header,
+body.dark-mode section {
+	background-color: rgb(0, 0, 0);
+}
+
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode h3,
+body.dark-mode h2,
+body.dark-mode span,
+body.dark-mode i {
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 255, 255);
+}
+
+body.dark-mode #logo {
+	filter: invert(100%); 
+}
+
 /*Header*/
 
 header {
@@ -32,6 +55,7 @@ header {
 	max-width: 960px;
 	width: 100%;
 	margin: auto;
+	/* border: 1px solid red; */
 }
 
 .container {
@@ -90,6 +114,10 @@ header {
 
 .nav-link:hover::before {
     width: 100%;
+}
+
+.navbar li a.active {
+	color: var(--colorSecondary); /* Color de texto resaltado */
 }
 
 .menu-icon {
@@ -310,8 +338,8 @@ header {
 }
 
 .services-box {
-	/* border: 1px solid;
-	border-color: var(--colorSecondary); */
+	/* border: 1px solid; */
+	/* border-color: var(--colorSecondary); */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -474,6 +502,7 @@ header {
 	position: fixed;
 	right: 1.5rem;
 	transition: 0.3s;
+	z-index: 1;
 }
 
 .scroll-top i {
@@ -544,6 +573,10 @@ header {
 		align-items: center;
 		padding: 50px 20px;
 		transition: 0.5s;
+	}
+
+	body.dark-mode .navbar {
+		background-color: rgb(0, 0, 0);
 	}
 
 	.nav-link {
@@ -645,7 +678,7 @@ header {
 	}
 
 	/*Scroll*/
-
+	
 	.scroll-top i {
 		font-size: 3rem;
 	}

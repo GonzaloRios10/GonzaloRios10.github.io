@@ -18,20 +18,20 @@
 	},
 	"about me": {
 		"rol": "Téc. Analista en Sistemas / Analista Programador ",
-		"cv": "Descargar CV",
-		"p1": "Actualmente resido en Posadas, Misiones (Argentina), donde estoy cursando el último año de la carrera de Análisis de Sistemas, lo que me brinda una sólida base en tecnología.",
-		"p2": "Mi trayectoria en el mundo IT me ha llevado a adquirir competencias en diversas tecnologías a través de cursos y del autoaprendizaje.",
-		"p3": "Mi enfoque ante cualquier reto es buscar siempre soluciones innovadoras y eficaces, colaborando al mismo tiempo en equipo para lograr resultados excepcionales."
+		"cv": "Descargar CV ↓",
+		"p1": "Actualmente resido en Posadas, Misiones (Argentina), donde estoy culminando la etapa final de la Tecnicatura en Análisis de Sistemas.",
+		"p2": "Mi recorrido como estudiante en el mundo IT me ha permitido adquirir conocimientos en diversas tecnologías a través de mi carrera, diferentes cursos y el autoaprendizaje.",
+		"p3": "Mi enfoque ante cualquier problema es buscar siempre soluciones innovadoras y eficaces, colaborando al mismo tiempo en equipo para lograr resultados sobresalientes."
 	},
 	"services": {
 		"h2 analisis": "Analisis",
-		"p analisis": "Identifico las necesidades del cliente y las transformo en especificaciones técnicas detalladas. Me centro en conocer a fondo los procesos para diseñar soluciones eficaces.",
+		"p analisis": "Identifico las necesidades del cliente y las traduzco en especificaciones técnicas exhaustivas. Mi enfoque se centra en diseñar soluciones eficaces que sirvan como base sólida para el desarrollo posterior.",
 		
 		"h2 desarrollo": "Desarrollo",
 		"p desarrollo" : "Traduzco las especificaciones en código funcional y eficiente. Mi objetivo es ofrecer soluciones que cumplan los estándares de calidad y satisfagan las expectativas del cliente.",
 		
-		"h2 mantenimiento": "Mantenimiento",
-		"p mantenimiento": "Realizo mantenimiento integral de desarrollo de sistemas informáticos y equipos hardware. Desde optimización y actualizaciones de sistemas operativos hasta limpieza y ajustes técnicos."
+		"h2 mantenimiento": "Mantenimiento y Soporte",
+		"p mantenimiento": "Ofrezco mantenimiento de hardware para equipos informáticos y además proporciono soporte dedicado a los sistemas que desarrollo, asegurando un rendimiento eficiente a largo plazo."
 	},
 	"projects": {
 		"h2 calculadora": "Calculadora",
