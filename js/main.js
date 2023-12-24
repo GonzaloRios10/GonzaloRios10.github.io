@@ -115,21 +115,17 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// Este event listener espera a que el contenido HTML esté completamente cargado antes de ejecutar el código.
 document.addEventListener("DOMContentLoaded", function() {
-
   // Selecciona todos los elementos de ancla dentro de elementos de lista en la barra de navegación.
   const navLinks = document.querySelectorAll(".navbar li a");
 
   // Adjunta un event listener de desplazamiento a la ventana.
   window.addEventListener("scroll", function () {
-  
     // Obtiene la posición vertical actual de desplazamiento.
     const scrollPosition = window.scrollY;
 
     // Itera sobre cada enlace de navegación.
     navLinks.forEach(function (link) {
-
       // Obtiene el valor del atributo "href" del enlace actual.
       var sectionId = link.getAttribute('href');
 
