@@ -1,15 +1,17 @@
-//Menu Icono
-let menu = document.querySelector('.menu-icon');
+//Menu responsive
+function toggleMenu() {
+  let menu = document.querySelector('.menu-icon');
+  let navbar = document.querySelector('.navbar');
 
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () => {
-	navbar.classList.toggle("open-menu");
-	menu.classList.toggle("move");
+  menu.onclick = () => {
+    navbar.classList.toggle("open-menu");
+    menu.classList.toggle("move");
+  }
 }
 
 //Swiper Liberia
-var swiper = new Swiper(".reviews-content", {
+function initializeSwiper() {
+  var swiper = new Swiper(".reviews-content", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -20,16 +22,15 @@ var swiper = new Swiper(".reviews-content", {
         el: ".swiper-pagination",
         clickable: true,
     },      
-});
+  });
+}
 
-// Cambio de idiomas
-const flagsElement = document.getElementById("flags");
-
-const textsToChange = document.querySelectorAll("[data-section]");
-
-const changeLanguage = async (language) => {
+//Cambio de idiomas
+async function changeLanguage(language) {
   const requestJson = await fetch(`./languages/${language}.json`);
   const texts = await requestJson.json();
+
+  const textsToChange = document.querySelectorAll("[data-section]");
 
   for(const textToChange of textsToChange) {
     const section = textToChange.dataset.section;
@@ -39,25 +40,29 @@ const changeLanguage = async (language) => {
   }
 }
 
-flagsElement.addEventListener("click", (e) => {
-  changeLanguage(e.target.parentElement.dataset.language);
-});
+function setupLanguageSwitch() {
+  const flagsElement = document.getElementById("flags");
 
-//Scroll
-let scrollTop = document.querySelector(".scroll-top");
+  flagsElement.addEventListener("click", (e) => {
+      changeLanguage(e.target.parentElement.dataset.language);
+  });
+}
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= window.innerHeight / 2) {
-    scrollTop.style.bottom = "1rem";
-  } else {
-    scrollTop.style.bottom = "-3.5rem";
-  }
-});
+//Botón de Scroll
+function btnScroll() {
+  let scrollTop = document.querySelector(".scroll-top");
 
-// Velocidad de desplazamiento de Scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= window.innerHeight / 2) {
+      scrollTop.style.bottom = "1rem";
+    } else {
+      scrollTop.style.bottom = "-3.5rem";
+    }
+  });
+}
 
-// Esta función se ejecuta cuando el contenido DOM está completamente cargado
-document.addEventListener("DOMContentLoaded", function() {
+//Velocidad de desplazamiento de Scroll
+function speedScroll() {
   // Selecciona todos los enlaces con las clases '.nav-link' y '.scroll-top'
   const scrollLinks = document.querySelectorAll('.nav-link, .scroll-top');
 
@@ -113,52 +118,63 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
-});
+}
 
-document.addEventListener("DOMContentLoaded", function() {
+function updateActiveLink() {
   const navLinks = document.querySelectorAll(".navbar li a");
 
-  function updateActiveLink() {
-    // Obtiene la posición vertical actual de desplazamiento.
-    const scrollPosition = window.scrollY;
+  // Obtiene la posición vertical actual de desplazamiento.
+  const scrollPosition = window.scrollY;
   
-    // Itera sobre cada enlace de navegación.
-    navLinks.forEach(function (link) {
-      // Obtiene el valor del atributo "href" del enlace actual.
-      const sectionId = link.getAttribute('href').substring(1); // Elimina el símbolo '#' del href
-      // Encuentra la sección objetivo en el HTML basándose en el ID de la sección.
-      const targetSection = document.getElementById(sectionId);
-  
-      if (targetSection) {
-        // Obtiene la posición y dimensiones de la sección objetivo.
-        const rect = targetSection.getBoundingClientRect();
-        // Calcula el desplazamiento para la sección objetivo actual, considerando la altura del encabezado.
-        const offset = rect.top + scrollPosition - document.querySelector('.container-header').offsetHeight;
-  
-        // Verifica si la sección actual está en la vista.
-        if (offset <= scrollPosition && offset + rect.height > scrollPosition) {
-          // Agrega la clase 'active' al enlace si está en la vista.
-          link.classList.add('active');
-        } else {
-          // Elimina la clase 'active' si la sección no está en la vista.
-          link.classList.remove('active');
-        }
+  // Itera sobre cada enlace de navegación.
+  navLinks.forEach(function (link) {
+    // Obtiene el valor del atributo "href" del enlace actual.
+    const sectionId = link.getAttribute('href').substring(1); // Elimina el símbolo '#' del href
+    // Encuentra la sección objetivo en el HTML basándose en el ID de la sección.
+    const targetSection = document.getElementById(sectionId);
+
+    if (targetSection) {
+      // Obtiene la posición y dimensiones de la sección objetivo.
+      const rect = targetSection.getBoundingClientRect();
+      // Calcula el desplazamiento para la sección objetivo actual, considerando la altura del encabezado.
+      const offset = rect.top + scrollPosition - document.querySelector('.container-header').offsetHeight;
+
+      // Verifica si la sección actual está en la vista.
+      if (offset <= scrollPosition && offset + rect.height > scrollPosition) {
+        // Agrega la clase 'active' al enlace si está en la vista.
+        link.classList.add('active');
+      } else {
+        // Elimina la clase 'active' si la sección no está en la vista.
+        link.classList.remove('active');
       }
-    });
-  }
+    }
+  });
+}
 
-  // Llama a la función para aplicar el marcado inicial
-  updateActiveLink();
-
-  // Adjunta el event listener de desplazamiento a la ventana
-  window.addEventListener("scroll", updateActiveLink);
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
+function darkMode() {
   const darkMode = document.getElementById("logo");
 
   darkMode.addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
   });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  toggleMenu();
+
+  setupLanguageSwitch();
+
+  // initializeSwiper();
+
+  btnScroll();
+
+  speedScroll();
+
+  updateActiveLink();
+  
+  darkMode();
+  
+  window.addEventListener("scroll", updateActiveLink);
+
 });

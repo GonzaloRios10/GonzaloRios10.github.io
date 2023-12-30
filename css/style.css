@@ -209,6 +209,11 @@ header {
 	text-align: center;
 }
 
+.greetings-container {
+	display: flex;
+	align-items: center;
+}
+
 .home-text h3 {
 	position: relative;
 	display: flex;
@@ -232,10 +237,42 @@ header {
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%);
-	right: -35px;
+	right: -68px;
 	width: 20px;
 	height: 2px;
 	background: var(--colorSecondary);
+}
+
+.hand-greetings {	
+	font-size: 1.8rem;
+	animation: greetings 2s infinite;
+}
+
+@keyframes greetings {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(14deg);
+	}
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }
 
 .home-text h2 { 
@@ -553,7 +590,13 @@ header {
 	
 	header {
 		margin-top: -1px;
-		height: 7rem;
+		height: 8rem;
+		/* border: 1px solid red; */
+	}
+
+	.container-header {
+		margin-top: 18px;
+		/* border: 1px solid blue; */
 	}
 
 	.container {
@@ -589,7 +632,7 @@ header {
 	}
 
 	#logo {
-		width: 105px;
+		width: 110px;
 	}
 
 	.menu-icon {
@@ -603,7 +646,7 @@ header {
 
 	.nav-link {
 		display: block;
-		margin: 1rem 0;
+		margin: 1rem;
 	}
 
 	/*Home*/
@@ -614,6 +657,14 @@ header {
 
 	.home-text h3 {
 		font-size: 2rem;
+	}
+
+	.hand-greetings {
+		font-size: 2.5rem;
+	}
+
+	.home-text h3::after {
+		right: -83px;
 	}
 
 	.home-text h2 {
@@ -692,11 +743,15 @@ header {
 
 	.flags {
 		margin-right: 4rem;
-		width: 115px;
+		width: 140px;
+		/* border: 1px solid green; */
 	}
 
+	
 	.flags__item {
-		width: 50px;
+		width: 60px;
+		/* border: 1px solid blue; */
+
 	}	
 
 	/*Footer*/

@@ -7,7 +7,8 @@
 		"contacto": "Contact"
 	},
 	"home": {
-		"saludo": "Hello!👋",
+		"saludo": "Hello!",
+		"saludo-mano": "👋🏻",
 		"nombre": "I'm Gonzalo",
 		"descripcion": "Enthusiast of analysis and programming, always looking for new challenges to grow personally and professionally in the exciting IT world. With a positive attitude and an open mind, I am ready to face any obstacle and make the most of the opportunities that arise in the IT field."
 	},
@@ -17,7 +18,7 @@
 		"proyectos": "Projects"
 	},
 	"about me": {
-		"rol": "Systems Analyst Technician / Programmer Analyst",
+		"rol": "Systems Analyst Tech / Programmer Analyst",
 		"cv": "Download CV ↓",
 		"p1": "I am currently living in Posadas, Misiones (Argentina), where I am finishing the final stage of my degree in Systems Analysis.",
 		"p2": "My journey as a student in the IT world has allowed me to acquire knowledge in various technologies through my career, different courses and self-learning.",

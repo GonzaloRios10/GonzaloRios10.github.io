@@ -7,7 +7,8 @@
 		"contacto": "Contacto"
 	},
 	"home": {
-		"saludo": "Hola!👋",
+		"saludo": "Hola!",
+		"saludo-mano": "👋🏻",
 		"nombre": "Soy Gonzalo",
 		"descripcion": "Entusiasta del analisis y la programación, siempre en busca de nuevos retos para crecer personal y profesionalmente en el apasionante mundo IT. Con una actitud positiva y una mente abierta, estoy preparado para afrontar cualquier obstáculo y aprovechar al máximo las oportunidades que surjan en el campo de la informática."
 	},
@@ -17,7 +18,7 @@
 		"proyectos": "Proyectos"
 	},
 	"about me": {
-		"rol": "Téc. Analista en Sistemas / Analista Programador ",
+		"rol": "Téc. Analista en Sistemas / Analista Programador",
 		"cv": "Descargar CV ↓",
 		"p1": "Actualmente resido en Posadas, Misiones (Argentina), donde estoy culminando la etapa final de la Tecnicatura en Análisis de Sistemas.",
 		"p2": "Mi recorrido como estudiante en el mundo IT me ha permitido adquirir conocimientos en diversas tecnologías a través de mi carrera, diferentes cursos y el autoaprendizaje.",
