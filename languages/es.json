@@ -10,7 +10,7 @@
 		"saludo": "Hola!",
 		"saludo-mano": "👋🏻",
 		"nombre": "Soy Gonzalo",
-		"descripcion": "Entusiasta del analisis y la programación, siempre en busca de nuevos retos para crecer personal y profesionalmente en el apasionante mundo IT. Con una actitud positiva y una mente abierta, estoy preparado para afrontar cualquier obstáculo y aprovechar al máximo las oportunidades que surjan en el campo de la informática."
+		"descripcion": "Entusiasta del analisis y la programación, siempre en busca de nuevos retos para crecer personal y profesionalmente en el apasionante mundo IT. Con una actitud positiva y una mente abierta, estoy preparado para afrontar cualquier obstáculo y aprovechar al máximo las oportunidades que se me presenten."
 	},
 	"heading": {
 		"sobre mi": "Sobre Mi",
@@ -20,9 +20,9 @@
 	"about me": {
 		"rol": "Téc. Analista en Sistemas / Analista Programador",
 		"cv": "Descargar CV ↓",
-		"p1": "Actualmente resido en Posadas, Misiones (Argentina), donde estoy culminando la etapa final de la Tecnicatura en Análisis de Sistemas.",
-		"p2": "Mi recorrido como estudiante en el mundo IT me ha permitido adquirir conocimientos en diversas tecnologías a través de mi carrera, diferentes cursos y el autoaprendizaje.",
-		"p3": "Mi enfoque ante cualquier problema es buscar siempre soluciones innovadoras y eficaces, colaborando al mismo tiempo en equipo para lograr resultados sobresalientes."
+		"p1": "Actualmente, resido en Posadas, Misiones (Argentina), donde estoy culminando la etapa final de la Tecnicatura en Análisis de Sistemas.",
+		"p2": "Mi recorrido como estudiante y autodidacta en el mundo IT me ha permitido adquirir conocimientos en diversas tecnologías.",
+		"p3": "Mi enfoque ante cualquier problema es buscar siempre soluciones eficientes y que garanticen el éxito a largo plazo, colaborando al mismo tiempo en equipo para lograr resultados sobresalientes."
 	},
 	"services": {
 		"h2 analisis": "Analisis",
@@ -41,11 +41,11 @@
 		"h2 tienda online": "Tienda online - E-Commerce",
 		"p tienda online": "Plataforma en linea de ventas para comercio de productos electronicos. En el cual se incluyeron diferentes modulos de administración, ventas y control de stock. Además se implemento la API de Mercado Pago como método de pago para ofrecer a los clientes una experiencia de compra segura.",
 		
-		"h2 gestion medica": "Gestión Médica",
-		"p gestion medica": "Sistema web para una clínica profesional medica. El mismo incluye funciones esenciales como programación de turnos, registro y acceso a historiales clínicos de pacientes, y una plataforma de mensajería en línea para el personal médico y sus pacientes.",
-		
 		"h2 gimnasio": "Gimnasio Virtual",
-		"p gimnasio": "Proyecto desarrollado para un gimnasio, brindando un conjunto completo de herramientas tanto para el profesor como para sus clientes. Incluye caracteristicas como la gestión de rutinas de entrenamiento y nutrición con el objetivo de ofrecer una experiencia integral y efectiva para todos los usuarios."
+		"p gimnasio": "Proyecto desarrollado para un gimnasio, brindando un conjunto completo de herramientas tanto para el profesor como para sus clientes. Incluye caracteristicas como la gestión de rutinas de entrenamiento y nutrición con el objetivo de ofrecer una experiencia integral y efectiva para todos los usuarios.", 
+
+		"h2 gestion medica": "Clínica Médica (En Desarrollo)",
+		"p gestion medica": "Sistema web para una clínica profesional medica. El mismo incluye funciones esenciales como programación de turnos, registro y acceso a historiales clínicos de pacientes, y una plataforma de mensajería en línea para el personal médico y sus pacientes."
 	},
 	"footer": {
 		"p text": "Comparte tu idea conmigo y trabajemos juntos!"
