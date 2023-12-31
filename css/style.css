@@ -289,6 +289,7 @@ header {
 	display: flex;
 	align-items: center;
 	margin-top: 0.5rem;
+	margin-bottom: -10px;
 }
 
 .social-media i {
@@ -659,6 +660,11 @@ header {
 		font-size: 2rem;
 	}
 
+	.home-text p {
+		width: 105%;
+		/* border: 1px solid red; */
+	}
+
 	.hand-greetings {
 		font-size: 2.5rem;
 	}
@@ -723,8 +729,12 @@ header {
 		color: dodgerBlue;
 	}
 
+	.services-box h2 {
+		font-size: 2rem;
+	}
+
 	.services-box p {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 	}	
 
 	/*Projects*/
@@ -733,10 +743,14 @@ header {
 		height: 300px;
 	}
 
+	.projects-box p {
+		font-size: 1.1rem;
+	}
+
 	/*Scroll*/
 	
 	.scroll-top i {
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 
 	/*Flags*/
@@ -746,12 +760,10 @@ header {
 		width: 140px;
 		/* border: 1px solid green; */
 	}
-
 	
 	.flags__item {
 		width: 60px;
 		/* border: 1px solid blue; */
-
 	}	
 
 	/*Footer*/
