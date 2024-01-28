@@ -154,8 +154,8 @@ header {
 /*Home*/
 
 .home {
-	min-height: 200px;
-	max-width: 100%;
+	/* max-width: 100%; */
+	/* min-height: 200px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -169,7 +169,7 @@ header {
 
 .home-content {
 	position: relative;
-	max-width: 600px;
+	max-width: 700px;
 	width: 100%;
 	margin: auto;
 	display: flex;
@@ -280,7 +280,10 @@ header {
 }
 
 .home-text p {
-	margin-top: 8px;
+	font-size: 1.2rem;
+	/* word-spacing: -0.1em;  */
+	text-align: center;
+	margin-top: 10px;
 	color: var(--colorFont);
 	padding-bottom: 8px;
 }
@@ -288,13 +291,13 @@ header {
 .social-media {
 	display: flex;
 	align-items: center;
-	margin-top: 0.5rem;
+	margin-top: 0.7rem;
 	margin-bottom: -10px;
 }
 
 .social-media i {
 	padding: 10px;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	border-radius: 50%;
 	color: var(--colorFont);
 }
@@ -305,10 +308,11 @@ header {
 }
 
 .heading {
+	/* border: 1px solid black; */
 	font-size: 2.5rem;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 0.5rem;
+	margin-top: 3rem;
 	margin-bottom: 1rem;
 	color: var(--colorFont);
 }
@@ -359,8 +363,9 @@ header {
 }
 
 .about-text p {
-	font-size: 0.938rem;
+	font-size: 1.1rem;
 	letter-spacing: 1px;
+	/* word-spacing: -0.1em;  */
 	text-align: justify;
 	margin-bottom: 1rem;
 	color: var(--colorFont);
@@ -689,21 +694,17 @@ header {
 
 	/*About me*/
 
-	.about-data span {
-		font-size: 0.5rem;
-	}
-
 	.about-data h2 {
-		font-size: 0.8rem;
+		font-size: 1.5rem;
 	}
 
-	.btn-cv {
+	/* .btn-cv {
 		font-size: 0.8rem;
-	}
+	} */
 
 	.about-text p {
-		text-align: left;
-		font-size: 0.8rem;
+		font-size:  1.4rem;
+		/* word-spacing: -0.1em; */
 	}
 
 	/*Services*/

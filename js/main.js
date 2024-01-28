@@ -56,7 +56,7 @@ function btnScroll() {
     if (window.scrollY >= window.innerHeight / 2) {
       scrollTop.style.bottom = "1rem";
     } else {
-      scrollTop.style.bottom = "-3.5rem";
+      scrollTop.style.bottom = "-4.5rem";
     }
   });
 }
