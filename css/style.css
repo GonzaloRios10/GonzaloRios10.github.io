@@ -63,7 +63,7 @@ header {
 	width: 100%;
 	margin: auto;
 	margin-bottom: 1.5rem;
-	/* border: 2px solid red; */
+	/* border: 1px solid red; */
 }
 
 #logo {
@@ -291,7 +291,7 @@ header {
 .social-media {
 	display: flex;
 	align-items: center;
-	margin-top: 0.7rem;
+	margin-top: 1rem;
 	margin-bottom: -10px;
 }
 
@@ -331,14 +331,14 @@ header {
 }
 
 .about-data span {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	color: var(--colorFont);
 }
 
 .about-data h2 {
-	font-size: 2rem;
+	font-size: 1.7rem;
 	font-weight: 700;
 	line-height: 2.6rem;
 	margin: 1rem 0;
@@ -355,6 +355,7 @@ header {
 	border: none;
 	border-radius: 6px;
 	text-decoration: none;
+	/* font-size: 1.1rem; */
 }
 
 .btn-cv:hover {
@@ -410,7 +411,7 @@ header {
 }
 
 .services-box p {
-	font-size: 0.938rem;
+	font-size: 1rem;
 }
 
 /*Projects*/
@@ -595,20 +596,13 @@ header {
 	/*Header*/
 	
 	header {
-		margin-top: -1px;
-		height: 8rem;
-		/* border: 1px solid red; */
-	}
-
-	.container-header {
-		margin-top: 18px;
 		/* border: 1px solid blue; */
 	}
 
-	.container {
-		margin: 0 auto;
-		width: 95%;
-		margin-bottom: 2rem;
+	.nav {
+		margin-top: 18px;
+		padding: 1rem 2rem;
+		/* border: 2px solid green; */
 	}
 
 	section {
@@ -658,16 +652,11 @@ header {
 	/*Home*/
 
 	.home {
-    	padding-top: 4rem;
+    	padding-top: 5.5rem;
 	}
 
-	.home-text h3 {
-		font-size: 2rem;
-	}
-
-	.home-text p {
-		width: 105%;
-		/* border: 1px solid red; */
+	.home-content {
+		max-width: 100%;
 	}
 
 	.hand-greetings {
@@ -678,32 +667,63 @@ header {
 		right: -83px;
 	}
 
+	.home-text h3 {
+		font-size: 2.5rem;
+	}
+
 	.home-text h2 {
 		width: 100%;
 		font-size: 2rem;
+		margin-top: 0.5rem;
 	}
 
 	.home-text p {
-		font-size: 1.5rem;
-		padding-bottom: 10px;
+		width: 100%;
+		margin-top: 1.2rem;
+		/* border: 1px solid red; */
 	}
 
 	.social-media i {
-		font-size: 3.5rem;
+		font-size: 6rem;
+		margin-top: 1.5rem;
+	}
+
+	/*Headings*/
+
+	.heading {
+		font-size: 4rem;
+		margin-top: 5rem;
+		margin-bottom: 1rem;
 	}
 
 	/*About me*/
 
-	.about-data h2 {
-		font-size: 1.5rem;
+	.about-content {
+		display: block;
+		max-width: 100%;
 	}
 
-	/* .btn-cv {
-		font-size: 0.8rem;
-	} */
+	.about-content h2 {
+		text-align: center;
+		margin-top: 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.btn-cv {
+		display: flex;
+		margin: 0 auto;
+		max-width: 39%;
+		font-size: 3rem;
+	}
+
+	.about-text {
+		padding: 0px 30px 0px 65px; /* 0px arriba, 15px derecha, 0px abajo, 15px izquierda */
+		margin-top: 3rem;
+	}
 
 	.about-text p {
-		font-size:  1.4rem;
+		text-align: left;
+		font-size: 1.5rem;
 		/* word-spacing: -0.1em; */
 	}
 
@@ -712,6 +732,7 @@ header {
 	.services-content {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		max-width: 100%;
 	}
 
 	.services-box {
@@ -719,7 +740,7 @@ header {
 	}
 
 	.services-box i {
-		font-size: 2rem;
+		font-size: 3rem;
 		padding: 10px;
 		border-radius: 5rem;
 		border: 2px dashed var(--colorFont);
@@ -731,21 +752,45 @@ header {
 	}
 
 	.services-box h2 {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 
 	.services-box p {
-		font-size: 1.8rem;
+		text-align: center;
+		font-size: 2.3rem;
 	}	
 
 	/*Projects*/
-
-	.projects-box {
-		height: 420px;
+	
+	.projects-content {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
 	}
 
-	.projects-box p {
-		font-size: 1.4rem;
+	.projects-box {	
+		margin: 0 auto;
+		width: 95%;
+		height: 50vh;
+		margin-bottom: 5%;
+	}
+	
+	.projects-overlay h2 {
+		font-size: 3rem;
+	}
+
+	.projects-overlay p {
+		font-size: 2rem;
+		padding: 0px 30px 0px 30px;
+	}
+
+	.projects-overlay i {
+		margin-top: 20px;
+		font-size: 3rem;
+	}
+
+	.projects-overlay .git {
+		font-size: 3rem;
 	}
 
 	/*Scroll*/
@@ -770,7 +815,7 @@ header {
 	/*Footer*/
 
 	.footer p {
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 
 }
