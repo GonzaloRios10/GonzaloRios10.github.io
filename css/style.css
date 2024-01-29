@@ -653,11 +653,15 @@ header {
 	/*Home*/
 
 	.home {
-    	padding-top: 5.5rem;
+    	padding-top: 6rem;
 	}
 
 	.home-content {
 		max-width: 100%;
+	}
+
+	.greetings-container {
+		margin-top: 1rem;
 	}
 
 	.hand-greetings {
@@ -669,18 +673,19 @@ header {
 	}
 
 	.home-text h3 {
-		font-size: 2.5rem;
+		font-size: 2.7rem;
 	}
 
 	.home-text h2 {
 		width: 100%;
-		font-size: 2rem;
+		font-size: 3rem;
 		margin-top: 0.5rem;
 	}
 
 	.home-text p {
-		width: 100%;
+		width: 95%;
 		margin-top: 1.2rem;
+		font-size: 2.3rem;
 		/* border: 1px solid red; */
 	}
 
@@ -704,7 +709,12 @@ header {
 		max-width: 100%;
 	}
 
+	.about-content span {
+		font-size: 2rem;
+	}
+
 	.about-content h2 {
+		font-size: 2.6rem;
 		text-align: center;
 		margin-top: 1.5rem;
 		margin-bottom: 2.5rem;
@@ -724,7 +734,7 @@ header {
 
 	.about-text p {
 		text-align: left;
-		font-size: 1.5rem;
+		font-size: 2.3rem;
 		/* word-spacing: -0.1em; */
 	}
 
@@ -753,12 +763,12 @@ header {
 	}
 
 	.services-box h2 {
-		font-size: 3rem;
+		font-size: 2.8rem;
 	}
 
 	.services-box p {
 		text-align: center;
-		font-size: 2.3rem;
+		font-size: 2.2rem;
 	}	
 
 	/*Projects*/
