@@ -595,10 +595,9 @@ header {
 
 	/*Header*/
 
-	header {
-		/* border: 1px solid blue;
-		background-color: red; */
-	}
+	/* header {
+		border: 1px solid blue;
+	} */
 
 	.nav {
 		margin-top: 18px;
@@ -767,8 +766,9 @@ header {
 	}
 
 	.services-box p {
+		padding: 5px 12px 0px 12px;
 		text-align: center;
-		font-size: 2.2rem;
+		font-size: 1.9rem;
 	}	
 
 	/*Projects*/
