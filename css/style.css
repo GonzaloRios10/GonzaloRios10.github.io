@@ -134,13 +134,13 @@ header {
 .menu-icon div {
 	display: block;
 	background: var(--colorSecondary);
-	height: 4px;
-	width: 34px; 
+	height: 9px;
+	width: 39px; 
 	transition: 0.3s;
 }
 
 .move .line1 {
-	transform: rotate(-45deg) translate(-6.4px, 6.4px);
+	transform: rotate(-50deg) translate(-13.4px, 6px);
 }
 
 .move .line2 {
@@ -148,7 +148,7 @@ header {
 }
 
 .move .line3 {
-	transform: rotate(45deg) translate(-6.4px, -6.4px);
+	transform: rotate(50deg) translate(-13.4px, -6px);
 }
 
 /*Home*/
@@ -628,11 +628,11 @@ header {
 	}
 
 	.nav-link {
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 
 	#logo {
-		width: 110px;
+		width: 125px;
 	}
 
 	.menu-icon {
@@ -652,7 +652,7 @@ header {
 	/*Home*/
 
 	.home {
-    	padding-top: 6rem;
+    	padding-top: 7rem;
 	}
 
 	.home-content {
@@ -814,12 +814,12 @@ header {
 
 	.flags {
 		margin-right: 4rem;
-		width: 140px;
+		width: 150px;
 		/* border: 1px solid green; */
 	}
 	
 	.flags__item {
-		width: 60px;
+		width: 65px;
 		/* border: 1px solid blue; */
 	}	
 
