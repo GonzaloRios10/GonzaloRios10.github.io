@@ -684,7 +684,7 @@ header {
 	.home-text p {
 		width: 95%;
 		margin-top: 1.2rem;
-		font-size: 2rem;
+		font-size: 2.3rem;
 		/* border: 1px solid red; */
 	}
 
@@ -736,7 +736,7 @@ header {
 
 	.about-text p {
 		text-align: left;
-		font-size: 2rem;
+		font-size: 2.3rem;
 		/* border: 1px solid blue; */
 		/* word-spacing: -0.1em; */
 	}
@@ -772,7 +772,7 @@ header {
 	.services-box p {
 		padding: 5px 0px 0px 0px;
 		text-align: center;
-		font-size: 2.3rem;
+		font-size: 2.1rem;
 		/* border: 1px solid red; */
 	}	
 
@@ -797,9 +797,9 @@ header {
 
 	.projects-overlay p {
 		font-size: 2.2rem;
-		padding: 0px 30px 0px 30px;
+		padding: 0px 25px 0px 25px;
 		text-align: center;
-		/* border: 3px solid red; */
+		border: 3px solid red;
 	}
 
 	.projects-overlay i {
@@ -833,7 +833,7 @@ header {
 	/*Footer*/
 
 	.footer p {
-		font-size: 2rem;
+		font-size: 2.3rem;
 	}
 
 }
