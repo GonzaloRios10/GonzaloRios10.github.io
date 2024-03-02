@@ -681,7 +681,7 @@ header {
 		margin-top: 0.5rem;
 	}
 
-	.home-text p {
+	.home-text .text-home{
 		width: 95%;
 		margin-top: 1.2rem;
 		font-size: 2rem;
@@ -734,7 +734,7 @@ header {
 		/* border: 1px solid red; */
 	}
 
-	.about-text p {
+	.about-text .text-about {
 		text-align: left;
 		font-size: 2rem;
 		/* border: 1px solid blue; */
