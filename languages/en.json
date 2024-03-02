@@ -26,12 +26,12 @@
 	},
 	"services": {
 		"h2 analisis": "Analysis",
-		"p analisis": "I identify customer needs and translate them into comprehensive technical specifications. My focus is on designing effective solutions that serve as a solid foundation for further development.",
+		"p analisis": "I identify customer needs and translate them into technical specifications. My focus is on designing effective solutions that serve as a solid foundation for further development.",
 		
 		"h2 desarrollo": "Development",
 		"p desarrollo" : "I translate specifications into functional and efficient code. My goal is to deliver solutions that meet quality standards and satisfy customer expectations.",
 		
-		"h2 mantenimiento" : "Maintenance & Support",
+		"h2 mantenimiento" : "Support",
 		"p mantenimiento": "I offer hardware maintenance for computer equipment and also provide dedicated support for the systems I develop, ensuring efficient long-term performance."
 	},
 	"projects": {

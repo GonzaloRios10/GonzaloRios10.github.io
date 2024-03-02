@@ -280,12 +280,13 @@ header {
 }
 
 .home-text p {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	/* word-spacing: -0.1em;  */
 	text-align: center;
 	margin-top: 10px;
 	color: var(--colorFont);
 	padding-bottom: 8px;
+    /* border: 1px solid red; */
 }
 
 .social-media {
@@ -364,7 +365,7 @@ header {
 }
 
 .about-text p {
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 	letter-spacing: 1px;
 	/* word-spacing: -0.1em;  */
 	text-align: justify;
@@ -410,8 +411,12 @@ header {
 	color: dodgerBlue;
 }
 
+.services-box h2 {
+    font-size: 1.7rem;
+}
+
 .services-box p {
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 
 /*Projects*/
@@ -686,7 +691,7 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 	}
 
 	.home-text .text-home{
-        padding: 0px 50px 0px 50px;
+        padding: 0px 30px 0px 30px;
 		margin-top: 1.2rem;
 		font-size: 2rem;
 		/* border: 1px solid red; */
