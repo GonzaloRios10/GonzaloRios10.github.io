@@ -693,7 +693,7 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 	.home-text .text-home{
         padding: 0px 30px 0px 30px;
 		margin-top: 1.2rem;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		/* border: 1px solid red; */
 	}
 
@@ -745,7 +745,7 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 
 	.about-text .text-about {
 		text-align: left;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		/* border: 1px solid blue; */
 		/* word-spacing: -0.1em; */
 	}
@@ -781,7 +781,7 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 	.services-box p {
 		padding: 5px 0px 0px 0px;
 		text-align: center;
-		font-size: 2.2rem;
+		font-size: 2.3rem;
 		/* border: 1px solid red; */
 	}	
 
