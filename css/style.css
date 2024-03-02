@@ -684,7 +684,7 @@ header {
 	.home-text p {
 		width: 95%;
 		margin-top: 1.2rem;
-		font-size: 2rem;
+		font-size: 2.1rem;
 		/* border: 1px solid red; */
 	}
 
@@ -736,7 +736,7 @@ header {
 
 	.about-text p {
 		text-align: left;
-		font-size: 2rem;
+		font-size: 2.1rem;
 		/* border: 1px solid blue; */
 		/* word-spacing: -0.1em; */
 	}
@@ -772,7 +772,7 @@ header {
 	.services-box p {
 		padding: 5px 0px 0px 0px;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 2.1rem;
 		/* border: 1px solid red; */
 	}	
 
@@ -836,14 +836,4 @@ header {
 		font-size: 2.3rem;
 	}
 
-}
-
-@media only screen and (min-width: 720px) and (max-width: 1520px) {
-	.home-text p {
-		font-size: 2.3rem;
-	}
-
-	.about-text p {
-		font-size: 2.3rem;
-	}
 }
