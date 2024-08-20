@@ -286,7 +286,6 @@ header {
 	margin-top: 10px;
 	color: var(--colorFont);
 	padding-bottom: 8px;
-    /* border: 1px solid red; */
 }
 
 .social-media {
@@ -339,7 +338,7 @@ header {
 }
 
 .about-data h2 {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 2.6rem;
 	margin: 1rem 0;
@@ -365,10 +364,10 @@ header {
 }
 
 .about-text p {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	letter-spacing: 1px;
 	/* word-spacing: -0.1em;  */
-	text-align: justify;
+	text-align: left;
 	margin-bottom: 1rem;
 	color: var(--colorFont);
 }
@@ -383,8 +382,6 @@ header {
 }
 
 .services-box {
-	/* border: 1px solid; */
-	/* border-color: var(--colorSecondary); */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -416,7 +413,7 @@ header {
 }
 
 .services-box p {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
 
 /*Projects*/
@@ -596,10 +593,6 @@ header {
 
 /*Responsive*/
 
-/* min-width se utiliza para aplicar estilos a dispositivos con un ancho de pantalla igual o superior al valor especificado.
-
-max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantalla igual o inferior al valor especificado. */
-
 @media only screen and (min-width: 480px) and (max-width: 1025px) {
 
 	/*Header*/
@@ -616,6 +609,7 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 
 	section {
 		padding: 0px 25px;
+		/* border: 1px solid blue; */
 	}
 
 	.navbar {
@@ -690,10 +684,9 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 		margin-top: 0.5rem;
 	}
 
-	.home-text .text-home{
-        padding: 0px 30px 0px 30px;
-		margin-top: 1.2rem;
-		font-size: 1.8rem;
+	.home-text .text-home {
+		margin: 1.2rem 3rem 0rem 3rem;
+		text-align: center;
 		/* border: 1px solid red; */
 	}
 
@@ -707,7 +700,7 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 	.heading {
 		font-size: 4rem;
 		margin-top: 5rem;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 	}
 
 	/*About me*/
@@ -738,14 +731,13 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 	}
 
 	.about-text {
-		padding: 0px 30px 0px 60px; /* 0px arriba, 15px derecha, 0px abajo, 15px izquierda */
-		margin-top: 3rem;
+		margin: 3rem 2rem 0rem 3rem;
 		/* border: 1px solid red; */
 	}
 
 	.about-text .text-about {
 		text-align: left;
-		font-size: 1.8rem;
+		font-size: 1.4rem;
 		/* border: 1px solid blue; */
 		/* word-spacing: -0.1em; */
 	}
@@ -753,37 +745,28 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 	/*Services*/
 
 	.services-content {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		display: block;
 		max-width: 100%;
+		/* border: 1px solid red; */
 	}
 
 	.services-box {
-		padding: 10px;
-	}
-
-	.services-box i {
-		font-size: 3rem;
-		padding: 10px;
-		border-radius: 5rem;
-		border: 2px dashed var(--colorFont);
-	}
-
-	.services-box:hover i {
-	  	border-color: dodgerBlue;
-		color: dodgerBlue;
-	}
-
-	.services-box h2 {
-		font-size: 3rem;
+		margin: 0px 0px 50px 0px;
+		/* border: 1px solid blue; */
 	}
 
 	.services-box p {
-		padding: 5px 0px 0px 0px;
+		margin: 10px 0px;
 		text-align: center;
-		font-size: 2.3rem;
-		/* border: 1px solid red; */
-	}	
+		width: 95%;
+		/* border: 1px solid green; */
+	}
+
+	.services-box i {
+		font-size: 4rem;
+		padding: 10px;
+		border: none;
+	}
 
 	/*Projects*/
 	
@@ -841,8 +824,11 @@ max-width se utiliza para aplicar estilos a dispositivos con un ancho de pantall
 
 	/*Footer*/
 
+	.footer-content { 
+		padding: 0px 0px 30px 0px;
+	}
+
 	.footer p {
 		font-size: 2.3rem;
 	}
-
 }
