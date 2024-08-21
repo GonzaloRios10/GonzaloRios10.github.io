@@ -9,22 +9,6 @@ function toggleMenu() {
   }
 }
 
-//Swiper Liberia
-function initializeSwiper() {
-  var swiper = new Swiper(".reviews-content", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-    	delay: 5000,
-        disableOnInteraction: true,
-    },
-	pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },      
-  });
-}
-
 //Cambio de idiomas
 async function changeLanguage(language) {
   const requestJson = await fetch(`./languages/${language}.json`);
@@ -159,22 +143,101 @@ function darkMode() {
   });
 }
 
+function handleScroll() {
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  fadeElements.forEach(element => {
+    const rect = element.getBoundingClientRect();
+    const viewHeight = window.innerHeight;
+
+    if (rect.top < viewHeight && rect.bottom >= 0) {
+      element.classList.add('visible');
+    } else {
+      element.classList.remove('visible');
+    }
+  });
+}
+
+// Función para ocultar el loader
+function hideLoader() {
+  const loader = document.getElementById('loader');
+  const mainContent = document.querySelector('.main-content');
+
+  if (loader) {
+    loader.classList.add('fade-out');
+    setTimeout(() => {
+      loader.remove();
+      // Mostrar el contenido principal con el efecto de entrada
+      if (mainContent) {
+        mainContent.classList.add('show-content');
+      }
+    }, 1000);
+  }
+}
+
+// Máquina de escribir
+function typeEffect() {
+  const element = document.getElementById('dynamic-text');
+  const staticPart = 'Téc. Analista '; // Parte fija del texto
+  const texts = [
+    'en Sistemas de Computación', // Primer texto variable con salto de línea
+    'Programador' // Segundo texto variable
+  ];
+  const typingSpeed = 200; // Velocidad de escritura en milisegundos
+  const erasingSpeed = 200; // Velocidad de borrado en milisegundos
+  const delayBetweenTexts = 1000; // Tiempo entre textos en milisegundos
+
+  let currentTextIndex = 0; // Índice para el texto actual que se está mostrando
+  let currentCharIndex = 0; // Índice del carácter actual que se está escribiendo o borrando
+  let isDeleting = false; // Booleano para saber si estamos borrando el texto
+
+  function type() {
+    const dynamicPart = texts[currentTextIndex]; // Obtiene el texto variable actual
+    let text = staticPart; // Comienza con la parte fija del texto
+
+    // Añade la parte variable al texto actual, según si estamos escribiendo o borrando
+    if (isDeleting) {
+      text += dynamicPart.substring(0, currentCharIndex--);
+    } else {
+      text += dynamicPart.substring(0, currentCharIndex++);
+    }
+
+    element.innerHTML = text; // Usa innerHTML para permitir etiquetas HTML como <span>
+
+    // Controla el flujo del efecto
+    if (!isDeleting && currentCharIndex === dynamicPart.length) {
+      // Si hemos terminado de escribir el texto, comienza a borrar
+      isDeleting = true;
+      setTimeout(type, delayBetweenTexts); // Espera antes de comenzar a borrar
+    } else if (isDeleting && currentCharIndex === 0) {
+      // Si hemos terminado de borrar el texto, pasa al siguiente
+      isDeleting = false;
+      currentTextIndex = (currentTextIndex + 1) % texts.length; // Mueve al siguiente texto
+      setTimeout(type, delayBetweenTexts); // Espera antes de comenzar con el nuevo texto
+    } else {
+      // Continúa escribiendo o borrando
+      const speed = isDeleting ? erasingSpeed : typingSpeed; // Velocidad según si estamos borrando o escribiendo
+      setTimeout(type, speed); // Llama a la función de nuevo después de un tiempo
+    }
+  }
+
+  type(); // Inicia el efecto
+}
+
 document.addEventListener("DOMContentLoaded", function() {
+  // Llamar a la función para ocultar el loader después de 2 segundos
+  setTimeout(hideLoader, 2000);
 
+  // Resto del código que ya tienes
   toggleMenu();
-
   setupLanguageSwitch();
-
-  // initializeSwiper();
-
   btnScroll();
-
   speedScroll();
-
   updateActiveLink();
-  
   darkMode();
+  handleScroll();
+  typeEffect(); // Llama a la función de máquina de escribir
   
   window.addEventListener("scroll", updateActiveLink);
-
+  window.addEventListener('scroll', handleScroll);
 });

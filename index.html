@@ -4,12 +4,18 @@
 	<meta charset="UTF-8">
 	<script src="https://kit.fontawesome.com/57c1e4ede6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
 	<link rel="icon" type="image/png" href="images/Logo.png"/>
 	<title>Rios Gonzalo Agustin | Portfolio</title>
 </head>
 
 <body>
+	<div class="loader" id="loader">
+		<div class="loader-content">
+		  <h1>Rios Gonzalo Agustin</h1>
+		  <p>Portfolio</p>
+		</div>
+	</div>
+	
 	<a href="#home" class="scroll-top">
 		<i class="fa-solid fa-circle-arrow-up"></i>
 	</a>
@@ -25,12 +31,12 @@
 			</ul>
 
 			<div id="flags" class="flags">
-				<div class="flags__item" data-language="es">
+				<!-- <div class="flags__item" data-language="es">
 					<img src="images/españa.svg" class="flags__img">
 				</div>
 				<div class="flags__item" data-language="en">
 					<img src="images/unitedkingdom.svg" class="flags__img">
-				</div>
+				</div> -->
 			</div>
 			
 			<div class="menu-icon">
@@ -40,220 +46,234 @@
 			</div>
 		</div>
 	</header>
-
-	<section class="home container" id="home">
-		<div class="home-content">
-			<div class="home-img">
-				<img src="images/avatar-perfil.png">
-			</div>
-			<div class="home-text">
-				<div class="greetings-container">
-					<h3 data-section="home" data-value="saludo">Hola!</h3><span class="hand-greetings" data-value="saludo-mano">👋🏻</span>
-				</div>
-				<h2 data-section="home" data-value="nombre">Soy Gonzalo</h2>
-				<p data-section="home" data-value="descripcion" class="text-home">
-					Entusiasta del analisis y la programación, busco constantemente nuevos desafíos para crecer. Con una actitud positiva y una mente abierta, estoy preparado para afrontar cualquier obstáculo y aprovechar al máximo las oportunidades que se me presenten.
-				</p>
-
-				<div class="social-media">
-					<a href="https://www.linkedin.com/in/gonzalo-agustín-rios/"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
-					<a href="https://www.instagram.com/gonza.rios/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-					<a href="https://github.com/GonzaloRios10" target="_blank"><i class="fa-brands fa-github"></i></a>
-				</div>
-			</div>
-		</div>
-	</section>
 	
-	<section class="about container" id="about-me">
-		<h2 class="heading" data-section="heading" data-value="sobre mi">Sobre mi</h2>
-		<div class="about-content">
-			<div class="about-data">
-				<span>Datos</span>
-				<h2 data-section="about me" data-value="rol">Téc. Analista en Sistemas de Computación / Analista Programador </h2>
-				<a href="CV 2024 - Rios Gonzalo Agustin.pdf" class="btn-cv" download="" data-section="about me" data-value="cv">	
-					Descargar CV ↓
-				</a>
-			</div>
-			<div class="about-text">
-				<p data-section="about me" data-value="p1" class="text-about">
-					Actualmente, resido en Posadas, Misiones (Argentina), mi ciudad natal y también el lugar donde tuve la oportunidad de llevar adelante gran parte de mis estudios.
-				</p>
-				<p data-section="about me" data-value="p2" class="text-about">
-					Mi recorrido y experiencia hasta hoy en el mundo IT me ha permitido adquirir conocimientos en diversas tecnologías.
-				</p>
-				<p data-section="about me" data-value="p3" class="text-about">
-					Mi enfoque ante cualquier problema se basa en buscar siempre soluciones eficientes y que garanticen el éxito a largo plazo.
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="services container" id="services">
-		<h2 class="heading" data-section="heading" data-value="servicios">Servicios</h2>
-		<div class="services-content">
-			<div class="services-box">
-				<i class="fa-solid fa-chart-line"></i>
-				<h2 data-section="services" data-value="h2 analisis">Analisis</h2>
-				<p data-section="services" data-value="p analisis">
-					Identifico las necesidades del cliente y las traduzco en especificaciones técnicas. Mi enfoque se centra en diseñar soluciones eficaces que sirvan como base sólida para el desarrollo posterior.
-				</p>
-			</div>
-			<div class="services-box">
-				<i class="fa-solid fa-laptop-code"></i>
-				<h2 data-section="services" data-value="h2 desarrollo">Desarrollo</h2>
-				<p data-section="services" data-value="p desarrollo">
-					Traduzco las especificaciones en código funcional y eficiente. Mi objetivo es ofrecer soluciones que cumplan los estándares de calidad y satisfagan las expectativas del cliente.
-				</p>
-			</div>
-			<div class="services-box">
-				<i class="fa-solid fa-screwdriver-wrench"></i>
-				<h2 data-section="services" data-value="h2 mantenimiento">Mantenimiento</h2>
-				<p data-section="services" data-value="p mantenimiento">
-					Ofrezco mantenimiento de hardware para equipos informáticos y además proporciono soporte dedicado a los sistemas que desarrollo, asegurando un rendimiento eficiente a largo plazo.
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="projects container" id="projects">
-		<h2 class="heading" data-section="heading" data-value="proyectos">Proyectos</h2>
-		<div class="projects-content">
-			<div class="projects-box">
-				<img src="images/CalculadoraWeb.png">
-				<div class="projects-overlay">
-					<h2 data-section="projects" data-value="h2 calculadora">
-						Calculadora
-			    	</h2>
-					<p data-section="projects" data-value="p calculadora">Calculadora web para operaciones Matemáticas. La cual realiza operaciones de Suma, resta, division y multiplicacion.</p>
-					<div class="icon-links">
-			            <i class="fa-brands fa-html5"></i>
-			            <i class="fa-brands fa-css3-alt"></i>
-			            <i class="fa-brands fa-square-js"></i>
-			        </div>
-					<a href="https://github.com/GonzaloRios10/Calculadora-Web.git" target="_blank">
-						<i class="fa-brands fa-github git"></i>
-					</a>
+	<div class="main-content">
+		<section class="home container fade-in" id="home">
+			<div class="home-content">
+				<div class="home-img">
+					<img src="images/avatar-perfil.png">
+				</div>
+				<div class="home-text">
+					<div class="greetings-container">
+						<h3 data-section="home" data-value="saludo">Hola!</h3><span class="hand-greetings" data-value="saludo-mano">👋🏻</span>
+					</div>
+					<h2 data-section="home" data-value="nombre">Soy Gonzalo</h2>
+					<p data-section="home" data-value="descripcion" class="text-home">
+						Entusiasta del analisis y la programación, busco constantemente nuevos desafíos para crecer. Con una actitud positiva y una mente abierta, estoy preparado para afrontar cualquier obstáculo y aprovechar al máximo las oportunidades que se me presenten.
+					</p>
+	
+					<div class="social-media">
+						<a href="https://www.linkedin.com/in/gonzalo-agustín-rios/"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+						<a href="https://www.instagram.com/gonza.rios/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://github.com/GonzaloRios10" target="_blank"><i class="fa-brands fa-github"></i></a>
+					</div>
 				</div>
 			</div>
-			<div class="projects-box">
-				<img src="images/ElectronicaSyS.jpeg">
-				<div class="projects-overlay">
-					<h2 data-section="projects" data-value="h2 tienda online">
-						Tienda Online - E-Commerce
-					</h2>
-					<p data-section="projects" data-value="p tienda online">Plataforma en linea de ventas para comercio de productos electronicos. En el cual se incluyeron diferentes modulos de administración, ventas y control de stock. Además se implemento la API de Mercado Pago como método de pago para ofrecer a los clientes una experiencia de compra segura.</p>
-					<div class="icon-links">
-			            <i class="fa-brands fa-html5"></i>
-			            <i class="fa-brands fa-css3-alt"></i>
-			            <i class="fa-brands fa-square-js"></i>
-			            <i class="fa-brands fa-php"></i>
-			            <i class="fa-solid fa-database"></i>
-			        </div>
-					<a href="https://github.com/GonzaloRios10/ElectronicaSyS-TiendaOnline.git" target="_blank">
-						<i class="fa-brands fa-github git"></i>
+		</section>
+		
+		<section class="about container fade-in" id="about-me">
+			<h2 class="heading" data-section="heading" data-value="sobre mi">Sobre mi</h2>
+			<div class="about-content">
+				<div class="about-data">
+					<span>Datos</span>
+					<h2 id="dynamic-text" data-section="about me" data-value="rol"></h2>
+					<a href="CV 2024 - Rios Gonzalo Agustin.pdf" class="btn-cv" download="" data-section="about me" data-value="cv">	
+						Descargar CV ↓
 					</a>
 				</div>
-			</div>
-			<div class="projects-box">
-				<img src="images/Gimnasio.jpg">
-				<div class="projects-overlay">
-					<h2 data-section="projects" data-value="h2 gimnasio">
-						Gimnasio Virtual
-			    	</h2>
-					<p data-section="projects" data-value="p gimnasio">Proyecto desarrollado para un gimnasio, brindando un conjunto completo de herramientas tanto para el profesor como para sus clientes. Incluye caracteristicas como la gestión de rutinas de entrenamiento y nutrición con el objetivo de ofrecer una experiencia integral y efectiva para todos los usuarios.</p>
-					<div class="icon-links">
-			            <i class="fa-brands fa-html5"></i>
-			            <i class="fa-brands fa-css3-alt"></i>
-			            <i class="fa-brands fa-square-js"></i>
-			            <i class="fa-brands fa-php"></i>
-			            <i class="fa-solid fa-database"></i>
-			        </div>
-					<a href="https://github.com/GonzaloRios10/PowerGym-Gimnasio.git" target="_blank">
-						<i class="fa-brands fa-github git"></i>
-					</a>
+				<div class="about-text">
+					<p data-section="about me" data-value="p1" class="text-about">
+						Actualmente, resido en Posadas, Misiones (Argentina), mi ciudad natal y también el lugar donde tuve la oportunidad de llevar adelante gran parte de mis estudios.
+					</p>
+					<p data-section="about me" data-value="p2" class="text-about">
+						Mi recorrido y experiencia hasta hoy en el mundo IT me ha permitido adquirir conocimientos en diversas tecnologías.
+					</p>
+					<p data-section="about me" data-value="p3" class="text-about">
+						Mi enfoque ante cualquier problema se basa en buscar siempre soluciones eficientes y que garanticen el éxito a largo plazo.
+					</p>
 				</div>
 			</div>
-			<div class="projects-box">
-				<img src="images/GestionMedica.jpeg">
-				<div class="projects-overlay">
-					<h2 data-section="projects" data-value="h2 gestion medica">
-						Clínica Médica
-			    	</h2>
-					<p data-section="projects" data-value="p gestion medica">Sistema web para una clínica profesional medica. El mismo incluye funciones esenciales como programación de turnos, registro y acceso a historiales clínicos de pacientes, y una plataforma de mensajería en línea para el personal médico y sus pacientes.</p>
-					<div class="icon-links">
-			            <i class="fa-brands fa-html5"></i>
-			            <i class="fa-brands fa-css3-alt"></i>
-			            <i class="fa-brands fa-square-js"></i>
-			            <i class="fa-brands fa-bootstrap"></i>
-			            <i class="fa-brands fa-php"></i>
-			            <i class="fa-solid fa-database"></i>
-			            <i class="fa-brands fa-laravel"></i>
-			        </div>
-					<a href="#" target="_blank">
-						<i class="fa-brands fa-github git"></i>
-					</a>
+		</section>
+	
+		<section class="services container fade-in" id="services">
+			<h2 class="heading" data-section="heading" data-value="servicios">Servicios</h2>
+			<div class="services-content">
+				<div class="services-box">
+					<i class="fa-solid fa-chart-line"></i>
+					<h2 data-section="services" data-value="h2 analisis">Analisis</h2>
+					<p data-section="services" data-value="p analisis">
+						Identifico las necesidades del cliente y las traduzco en especificaciones técnicas. Mi enfoque se centra en diseñar soluciones eficaces que sirvan como base sólida para el desarrollo posterior.
+					</p>
+				</div>
+				<div class="services-box">
+					<i class="fa-solid fa-laptop-code"></i>
+					<h2 data-section="services" data-value="h2 desarrollo">Desarrollo</h2>
+					<p data-section="services" data-value="p desarrollo">
+						Traduzco las especificaciones en código funcional y eficiente. Mi objetivo es ofrecer soluciones que cumplan los estándares de calidad y satisfagan las expectativas del cliente.
+					</p>
+				</div>
+				<div class="services-box">
+					<i class="fa-solid fa-screwdriver-wrench"></i>
+					<h2 data-section="services" data-value="h2 mantenimiento">Mantenimiento</h2>
+					<p data-section="services" data-value="p mantenimiento">
+						Ofrezco mantenimiento de hardware para equipos informáticos y además proporciono soporte dedicado a los sistemas que desarrollo, asegurando un rendimiento eficiente a largo plazo.
+					</p>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	
+		<section class="technologies container fade-in" id="technologies">
+			<h2 class="heading" data-section="heading" data-value="tecnologías">Conocimientos</h2>
+			<div class="technologies-content">
+				<div class="technology-box">
+					<i class="fa-brands fa-html5"></i>
+					<p>HTML5</p>
+				</div>
+				<div class="technology-box">
+					<i class="fa-brands fa-css3-alt"></i>
+					<p>CSS3</p>
+				</div>
+				<div class="technology-box">
+					<i class="fa-brands fa-square-js"></i>
+					<p>JavaScript</p>
+				</div>
+				<div class="technology-box">
+					<i class="fa-brands fa-php"></i>
+					<p>PHP</p>
+				</div>
+				<div class="technology-box">
+					<i class="fa-solid fa-database"></i>
+					<p>MySQL</p>
+				</div>
+				<div class="technology-box">
+					<i class="fa-brands fa-laravel"></i>
+					<p>Laravel</p>
+				</div>
+				<div class="technology-box">
+					<i class="fa-brands fa-angular"></i>
+					<p>Angular</p>
+				</div>
+				<div class="technology-box">
+					<i class="fa-brands fa-bootstrap"></i>
+					<p>Bootstrap</p>
+				</div>
+				<div class="technology-box">
+					<i class="fa-brands fa-figma"></i>
+					<p>Figma</p>
+				</div>
 
-	<!-- <section class="reviews container" id="reviews">
-		<h2 class="heading">Algunas Tareas</h2>
-		<div class="reviews-content swiper">
-			<div class="swiper-wrapper">
-		      <div class="swiper-slide">
-		      	<div class="review-box">
-		      		<i class="fa-solid fa-quote-left"></i>
-		      		<p class="review-text">
-		      			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		      			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		      			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		      			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		      		</p>
-		      		<div class="review-profile">
-		      			<h2>Alberto Perez</h2>
-		      			<span>From Argentina</span>
-		      			<img src="https://disenowebakus.net/imagenes/articulos/analisis-de-proyectos-web.jpg" class="porftolio-img">
-		      		</div>
-		      	</div>
-		      </div>
+				<div class="technology-box">
+					<i class="fa-brands fa-git-alt"></i>
+					<p>Git</p>
+				</div>
 
-		      <div class="swiper-slide">
-		      	<div class="review-box">
-		      		<i class="fa-solid fa-quote-left"></i>
-		      		<p class="review-text">
-		      			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		      			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		      			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		      			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		      		</p>
-		      		<div class="review-profile">
-		      			<h2>Milei</h2>
-		      			<span>From Argentina</span>
-		      			<img src="https://disenowebakus.net/imagenes/articulos/analisis-de-proyectos-web.jpg" class="porftolio-img">
-		      		</div>
-		      	</div>
-		      </div>
-    		</div>
-		    <div class="swiper-pagination"></div>	
-		</div>
-	</section> -->
+				<!-- <div class="technology-box">
+					<i class="fa-brands fa-python"></i>
+					<p>Python</p>
+				</div>
 
-	<section class="footer container">
-		<div class="footer-content">
-			<div class="social-media">
-				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=gonzalo.agusrios@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+				<div class="technology-box">
+					<i class="fa-brands fa-java"></i>
+					<p>Java</p>
+				</div> -->
 			</div>
-			<div class="footer-links">
-				<p data-section="footer" data-value="p text">Comparte tu idea conmigo y trabajemos juntos!</p>
+		</section>	
+	
+		<section class="projects container fade-in" id="projects">
+			<h2 class="heading" data-section="heading" data-value="proyectos">Proyectos</h2>
+			<div class="projects-content">
+				<div class="projects-box">
+					<img src="images/CalculadoraWeb.png">
+					<div class="projects-overlay">
+						<h2 data-section="projects" data-value="h2 calculadora">
+							Calculadora
+						</h2>
+						<p data-section="projects" data-value="p calculadora">Calculadora web para operaciones Matemáticas. La cual realiza operaciones de Suma, resta, division y multiplicacion.</p>
+						<div class="icon-links">
+							<i class="fa-brands fa-html5"></i>
+							<i class="fa-brands fa-css3-alt"></i>
+							<i class="fa-brands fa-square-js"></i>
+						</div>
+						<a href="https://github.com/GonzaloRios10/Calculadora-Web.git" target="_blank">
+							<i class="fa-brands fa-github git"></i>
+						</a>
+					</div>
+				</div>
+				<div class="projects-box">
+					<img src="images/ElectronicaSyS.jpeg">
+					<div class="projects-overlay">
+						<h2 data-section="projects" data-value="h2 tienda online">
+							Tienda Online - E-Commerce
+						</h2>
+						<p data-section="projects" data-value="p tienda online">Plataforma en linea de ventas para comercio de productos electronicos. En el cual se incluyeron diferentes modulos de administración, ventas y control de stock. Además se implemento la API de Mercado Pago como método de pago para ofrecer a los clientes una experiencia de compra segura.</p>
+						<div class="icon-links">
+							<i class="fa-brands fa-html5"></i>
+							<i class="fa-brands fa-css3-alt"></i>
+							<i class="fa-brands fa-square-js"></i>
+							<i class="fa-brands fa-php"></i>
+							<i class="fa-solid fa-database"></i>
+						</div>
+						<a href="https://github.com/GonzaloRios10/ElectronicaSyS-TiendaOnline.git" target="_blank">
+							<i class="fa-brands fa-github git"></i>
+						</a>
+					</div>
+				</div>
+				<div class="projects-box">
+					<img src="images/Gimnasio.jpg">
+					<div class="projects-overlay">
+						<h2 data-section="projects" data-value="h2 gimnasio">
+							Gimnasio Virtual
+						</h2>
+						<p data-section="projects" data-value="p gimnasio">Proyecto desarrollado para un gimnasio, brindando un conjunto completo de herramientas tanto para el profesor como para sus clientes. Incluye caracteristicas como la gestión de rutinas de entrenamiento y nutrición con el objetivo de ofrecer una experiencia integral y efectiva para todos los usuarios.</p>
+						<div class="icon-links">
+							<i class="fa-brands fa-html5"></i>
+							<i class="fa-brands fa-css3-alt"></i>
+							<i class="fa-brands fa-square-js"></i>
+							<i class="fa-brands fa-php"></i>
+							<i class="fa-solid fa-database"></i>
+						</div>
+						<a href="https://github.com/GonzaloRios10/PowerGym-Gimnasio.git" target="_blank">
+							<i class="fa-brands fa-github git"></i>
+						</a>
+					</div>
+				</div>
+				<div class="projects-box">
+					<img src="images/GestionMedica.jpeg">
+					<div class="projects-overlay">
+						<h2 data-section="projects" data-value="h2 gestion medica">
+							Clínica Médica
+						</h2>
+						<p data-section="projects" data-value="p gestion medica">Sistema web para una clínica profesional medica. El mismo incluye funciones esenciales como programación de turnos, registro y acceso a historiales clínicos de pacientes, y una plataforma de mensajería en línea para el personal médico y sus pacientes.</p>
+						<div class="icon-links">
+							<i class="fa-brands fa-html5"></i>
+							<i class="fa-brands fa-css3-alt"></i>
+							<i class="fa-brands fa-square-js"></i>
+							<i class="fa-brands fa-bootstrap"></i>
+							<i class="fa-brands fa-php"></i>
+							<i class="fa-solid fa-database"></i>
+							<i class="fa-brands fa-laravel"></i>
+						</div>
+						<a href="#" target="_blank">
+							<i class="fa-brands fa-github git"></i>
+						</a>
+					</div>
+				</div>
 			</div>
-			<p>&#169; Copyright | Developed by RGAcode</p>
-		</div>
-	</section>
+		</section>
+	
+		<section class="footer container fade-in">
+			<div class="footer-content">
+				<div class="social-media">
+					<a href="https://mail.google.com/mail/?view=cm&fs=1&to=gonzalo.agusrios@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+				</div>
+				<div class="footer-links">
+					<p data-section="footer" data-value="p text">Comparte tu idea conmigo y trabajemos juntos!</p>
+				</div>
+				<p>&#169; Copyright | Developed by RGAcode</p>
+			</div>
+		</section>
+	</div>
+	
 
 	<script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.js"></script>
 	<script src="js/main.js"></script>

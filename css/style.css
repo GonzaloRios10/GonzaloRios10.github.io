@@ -41,14 +41,70 @@ body.dark-mode #logo {
 	filter: invert(100%); 
 }
 
-/*Header*/
+/* Loader Styles */
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+  
+.loader-content {
+	text-align: center;
+}
+  
+.loader h1, .loader p {
+	margin: 0;
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 1s ease, transform 1s ease;
+}
 
+.loader h1 {
+	font-size: 2rem !important;
+	margin-bottom: 0.5rem;
+}
+
+.loader p {
+	font-size: 1.5rem !important;
+}
+
+/* Animación de desaparición */
+.fade-out h1 {
+	opacity: 0;
+	transform: translateX(-100%);
+}
+
+.fade-out p {
+	opacity: 0;
+	transform: translateX(100%);
+}
+
+/* Efecto de desvanecimiento y desplazamiento */
+.main-content {
+	opacity: 0;
+	transform: translateY(10px);
+	transition: opacity 1s ease, transform 1s ease;
+}
+
+.show-content {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/*Header*/
 header {
 	position: fixed;
 	width: 100%;
 	background: var(--colorBackground);
 	z-index: 1;
-	/* box-shadow: 0px 2px 10px rgba(0,0,0,0.2); */
+	/* box-sha	w: 0px 2px 10px rgba(0,0,0,0.2); */
 }
 
 .container-header {
@@ -152,7 +208,6 @@ header {
 }
 
 /*Home*/
-
 .home {
 	/* max-width: 100%; */
 	/* min-height: 200px; */
@@ -190,15 +245,12 @@ header {
 }
 
 .home-img img {
-	vertical-align: middle;
 	width: 100%;
 	max-width: 100%;
-	height: auto;
 	margin-top: -30px;
 	transform: translate(0%, 2%);
 	border-bottom-left-radius: 50%; 
   	border-bottom-right-radius: 50%;
-	/* border: 1px solid black; */
 }
 
 .home-text {
@@ -318,7 +370,6 @@ header {
 }
 
 /*About me*/
-
 .about.container {
 	width: 100%;
 	/* border: 1px solid blue; */
@@ -373,7 +424,6 @@ header {
 }
 
 /*Services*/
-
 .services-content {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -417,7 +467,6 @@ header {
 }
 
 /*Projects*/
-
 .projects {
 	margin-top: 20px;
 }
@@ -496,21 +545,7 @@ header {
 	transition: 0.3s all ease;
 }
 
-/**/
-
-.reviews {
-	margin-top: 20px;
-}
-
-.reviews-content {
-	width: 100%;
-	height: 200px;
-	border: 1px solid black;
-	margin-bottom: 50px;
-}
-
 /*Footer*/
-
 .footer-content {
 	display: flex;
 	align-items: center;
@@ -548,7 +583,6 @@ header {
 }
 
 /*Scroll*/
-
 .scroll-top {
 	position: fixed;
 	right: 1.5rem;
@@ -568,7 +602,6 @@ header {
 }
 
 /*Multi Idioma*/
-
 .flags {
 	display: flex;
 	width: 75px;
@@ -591,8 +624,52 @@ header {
 	filter: grayscale(0%); 
 }
 
-/*Responsive*/
+/*Tecnologias*/
+.technologies-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
 
+.technology-box {
+	width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.technology-box i {
+    font-size: 2rem;
+    color: #333;
+}
+
+.technology-box p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Desvanecimiento de secciones */
+.fade-in {
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+}
+  
+.fade-in.visible {
+	opacity: 1;
+}
+
+#dynamic-text {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* Responsive */
 @media only screen and (min-width: 480px) and (max-width: 1025px) {
 
 	/*Header*/
@@ -764,8 +841,9 @@ header {
 
 	.services-box i {
 		font-size: 4rem;
-		padding: 10px;
-		border: none;
+		padding: 20px;
+		border-radius: 5rem;
+		border: 2px dashed var(--colorFont);
 	}
 
 	/*Projects*/
