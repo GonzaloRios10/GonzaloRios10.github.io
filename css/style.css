@@ -41,6 +41,10 @@ body.dark-mode #logo {
 	filter: invert(100%); 
 }
 
+body.dark-mode .technology-box p {
+	color: rgb(0, 0, 0);
+}
+
 /* Loader Styles */
 .loader {
 	position: fixed;
@@ -104,14 +108,12 @@ header {
 	width: 100%;
 	background: var(--colorBackground);
 	z-index: 1;
-	/* box-sha	w: 0px 2px 10px rgba(0,0,0,0.2); */
 }
 
 .container-header {
 	max-width: 960px;
 	width: 100%;
 	margin: auto;
-	/* border: 1px solid red; */
 }
 
 .container {
@@ -119,13 +121,12 @@ header {
 	width: 100%;
 	margin: auto;
 	margin-bottom: 1.5rem;
-	/* border: 1px solid red; */
 }
 
 #logo {
 	cursor: pointer;
 	width: 80px;
-	/* filter: invert(100%);  */
+	padding: 15px 0px 0px 0px;
 }
 
 .nav {
@@ -173,7 +174,7 @@ header {
 }
 
 .navbar li a.active {
-	color: var(--colorSecondary); /* Color de texto resaltado */
+	color: var(--colorSecondary); 
 }
 
 .menu-icon {
@@ -209,17 +210,11 @@ header {
 
 /*Home*/
 .home {
-	/* max-width: 100%; */
-	/* min-height: 200px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding-top: 2rem;
 	background: var(--colorBackground);
-	/* background-image: url(../images/snippetset2.gif);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover; */
 }
 
 .home-content {
@@ -231,7 +226,6 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* border: 1px solid green; */
 }
 
 .home-img {
@@ -241,7 +235,6 @@ header {
 	margin-top: 90px;
 	width: 40%;
 	background: rgb(30, 144, 255);
-	/* border: 1px solid red; */
 }
 
 .home-img img {
@@ -333,7 +326,6 @@ header {
 
 .home-text p {
 	font-size: 1.4rem;
-	/* word-spacing: -0.1em;  */
 	text-align: center;
 	margin-top: 10px;
 	color: var(--colorFont);
@@ -360,7 +352,6 @@ header {
 }
 
 .heading {
-	/* border: 1px solid black; */
 	font-size: 2.5rem;
 	text-transform: uppercase;
 	text-align: center;
@@ -372,7 +363,6 @@ header {
 /*About me*/
 .about.container {
 	width: 100%;
-	/* border: 1px solid blue; */
 }
 
 .about-content {
@@ -406,7 +396,6 @@ header {
 	border: none;
 	border-radius: 6px;
 	text-decoration: none;
-	/* font-size: 1.1rem; */
 }
 
 .btn-cv:hover {
@@ -417,7 +406,6 @@ header {
 .about-text p {
 	font-size: 1.3rem;
 	letter-spacing: 1px;
-	/* word-spacing: -0.1em;  */
 	text-align: left;
 	margin-bottom: 1rem;
 	color: var(--colorFont);
@@ -483,7 +471,6 @@ header {
 	height: 320px;
 	border-radius: 1rem;
 	overflow: hidden;
-	/* border: 1px solid black; */
 }
 
 .projects-box img {
@@ -511,11 +498,11 @@ header {
 	font-size: 1.6rem;
 	font-weight: 600;
 	margin-bottom: 10px;	
-	/* border: 1px solid yellow; */
 }
 
 .projects-overlay p {
-	text-align: justify;
+	width: 85%;
+	text-align: center;
 	color: var(--colorBackground);
 	padding: 0px 10px 10px 10px;
 }
@@ -638,20 +625,41 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+	text-align: center;
     padding: 2rem;
     background-color: #f5f5f5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+	cursor: grab;
 }
 
-.technology-box i {
-    font-size: 2rem;
+.technology-box:active {
+    cursor: grabbing;
+    opacity: 0.6;
+}
+
+.technology-box:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.technology-box svg {
+    width: 64px; 
+    height: 64px;
+	padding: 5px;
     color: #333;
+	transition: transform 0.3s ease;
+}
+
+.technology-box:hover svg {
+    transform: scale(1.1);
 }
 
 .technology-box p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem; 
+    color: #333; 
+    text-align: center; 
 }
 
 /* Desvanecimiento de secciones */
@@ -671,9 +679,15 @@ header {
 
 /* Responsive */
 @media only screen and (min-width: 480px) and (max-width: 1025px) {
-
+	/* Loader */
+	.loader h1 {
+		font-size: 4rem !important;
+	}
+	
+	.loader p {
+		font-size: 2.5rem !important;
+	}
 	/*Header*/
-
 	/* header {
 		border: 1px solid blue;
 	} */
@@ -681,12 +695,10 @@ header {
 	.nav {
 		margin-top: 18px;
 		padding: 1rem 2rem;
-		/* border: 2px solid green; */
 	}
 
 	section {
 		padding: 0px 25px;
-		/* border: 1px solid blue; */
 	}
 
 	.navbar {
@@ -730,7 +742,6 @@ header {
 	}
 
 	/*Home*/
-
 	.home {
     	padding-top: 7rem;
 	}
@@ -764,7 +775,6 @@ header {
 	.home-text .text-home {
 		margin: 1.2rem 3rem 0rem 3rem;
 		text-align: center;
-		/* border: 1px solid red; */
 	}
 
 	.social-media i {
@@ -773,7 +783,6 @@ header {
 	}
 
 	/*Headings*/
-
 	.heading {
 		font-size: 4rem;
 		margin-top: 5rem;
@@ -781,7 +790,6 @@ header {
 	}
 
 	/*About me*/
-
 	.about-content {
 		display: block;
 		max-width: 100%;
@@ -807,36 +815,35 @@ header {
 		font-size: 3rem;
 	}
 
+	#dynamic-text {
+		margin: 0 auto;
+		padding: 3rem 0px;
+		max-width: 90%;
+	}
+
 	.about-text {
 		margin: 3rem 2rem 0rem 3rem;
-		/* border: 1px solid red; */
 	}
 
 	.about-text .text-about {
 		text-align: left;
 		font-size: 1.4rem;
-		/* border: 1px solid blue; */
-		/* word-spacing: -0.1em; */
 	}
 
 	/*Services*/
-
 	.services-content {
 		display: block;
 		max-width: 100%;
-		/* border: 1px solid red; */
 	}
 
 	.services-box {
 		margin: 0px 0px 50px 0px;
-		/* border: 1px solid blue; */
 	}
 
 	.services-box p {
 		margin: 10px 0px;
 		text-align: center;
 		width: 95%;
-		/* border: 1px solid green; */
 	}
 
 	.services-box i {
@@ -847,7 +854,6 @@ header {
 	}
 
 	/*Projects*/
-	
 	.projects-content {
 		display: flex;
 		flex-direction: column;
@@ -869,7 +875,6 @@ header {
 		font-size: 2.2rem;
 		padding: 0px 25px 0px 25px;
 		text-align: center;
-		/* border: 3px solid red; */
 	}
 
 	.projects-overlay i {
@@ -882,31 +887,49 @@ header {
 	}
 
 	/*Scroll*/
-	
 	.scroll-top i {
 		font-size: 4rem;
 	}
 
 	/*Flags*/
-
 	.flags {
 		margin-right: 4rem;
 		width: 150px;
-		/* border: 1px solid green; */
 	}
 	
 	.flags__item {
 		width: 65px;
-		/* border: 1px solid blue; */
 	}	
 
 	/*Footer*/
-
 	.footer-content { 
 		padding: 0px 0px 30px 0px;
 	}
 
 	.footer p {
 		font-size: 2.3rem;
+	}
+
+	/*Tecnologias*/
+	.technologies-content {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+	
+	.technology-box {
+		width: 20%;
+	}
+	
+	.technology-box svg {
+		width: 84px;
+		height: 84px;
+		padding: 5px;
+	}
+	
+	.technology-box p {
+		font-size: 2rem; 
 	}
 }

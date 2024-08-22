@@ -163,6 +163,10 @@ function hideLoader() {
   const loader = document.getElementById('loader');
   const mainContent = document.querySelector('.main-content');
 
+  // if (mainContent) {
+  //   mainContent.classList.add('show-content');
+  // }
+
   if (loader) {
     loader.classList.add('fade-out');
     setTimeout(() => {
@@ -224,11 +228,44 @@ function typeEffect() {
   type(); // Inicia el efecto
 }
 
+// Drag & Drop functionality
+function initDragAndDrop() {
+  const boxes = document.querySelectorAll('.technology-box');
+  const container = document.querySelector('.technologies-content');
+  let draggedItem = null;
+
+  boxes.forEach(box => {
+    box.addEventListener('dragstart', function(e) {
+      draggedItem = box;
+      setTimeout(() => {
+        box.style.display = 'none'; 
+      }, 0);
+    });
+
+    box.addEventListener('dragend', function(e) {
+      setTimeout(() => {
+        draggedItem.style.display = 'block';  
+        draggedItem = null;
+      }, 0);
+    });
+
+    box.addEventListener('dragover', function(e) {
+      e.preventDefault();
+    });
+
+    box.addEventListener('drop', function(e) {
+      e.preventDefault();
+      if (draggedItem) {
+        container.insertBefore(draggedItem, this);
+      }
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   // Llamar a la función para ocultar el loader después de 2 segundos
   setTimeout(hideLoader, 2000);
 
-  // Resto del código que ya tienes
   toggleMenu();
   setupLanguageSwitch();
   btnScroll();
@@ -236,8 +273,9 @@ document.addEventListener("DOMContentLoaded", function() {
   updateActiveLink();
   darkMode();
   handleScroll();
-  typeEffect(); // Llama a la función de máquina de escribir
-  
+  typeEffect();
+  initDragAndDrop();
+
   window.addEventListener("scroll", updateActiveLink);
   window.addEventListener('scroll', handleScroll);
 });
