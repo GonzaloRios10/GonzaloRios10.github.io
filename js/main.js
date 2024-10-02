@@ -163,20 +163,20 @@ function hideLoader() {
   const loader = document.getElementById('loader');
   const mainContent = document.querySelector('.main-content');
 
-  if (mainContent) {
-    mainContent.classList.add('show-content');
-  }
-
-  // if (loader) {
-  //   loader.classList.add('fade-out');
-  //   setTimeout(() => {
-  //     loader.remove();
-  //     // Mostrar el contenido principal con el efecto de entrada
-  //     if (mainContent) {
-  //       mainContent.classList.add('show-content');
-  //     }
-  //   }, 1000);
+  // if (mainContent) {
+  //   mainContent.classList.add('show-content');
   // }
+
+  if (loader) {
+    loader.classList.add('fade-out');
+    setTimeout(() => {
+      loader.remove();
+      // Mostrar el contenido principal con el efecto de entrada
+      if (mainContent) {
+        mainContent.classList.add('show-content');
+      }
+    }, 1000);
+  }
 }
 
 // Máquina de escribir
