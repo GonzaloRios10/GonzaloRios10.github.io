@@ -743,7 +743,7 @@ header {
 }
 
 /* Responsive */
-@media only screen and (min-width: 480px) and (max-width: 1025px) {
+@media (max-width: 480px) {
 	/* Loader */
 	.loader h1 {
 		font-size: 4rem !important;
