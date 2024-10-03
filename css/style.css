@@ -47,6 +47,18 @@ body.dark-mode .technology-box p {
 	color: rgb(0, 0, 0);
 }
 
+body.dark-mode .heading-why-me {
+	color: var(--colorSecondary);
+}
+
+body.dark-mode .why-me-description span {
+	color: var(--colorSecondary);
+}
+
+body.dark-mode ul li {
+    color: rgb(255, 255, 255);
+}
+
 /* Loader Styles */
 .loader {
 	position: fixed;
@@ -1057,12 +1069,12 @@ header {
 		width: 100%;  
 	}
 
-	.why-me-who .img {
+	/* .why-me-who .img {
 		height: 85vh;
-	}
+	} */
 
 	.why-me-who .img img {
-		height: 80vh;
+		height: auto;
 	}
 
 	.why-me-description p {
