@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
     font-family: 'Montserrat';
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 }
 
 :root {
@@ -17,6 +17,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 body.dark-mode {
@@ -622,7 +623,7 @@ header {
 }
 
 .technology-box {
-	width: 10%;
+	width: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -795,7 +796,7 @@ header {
 
 	.menu-icon {
 		display: flex;
-		margin-right: 60px;
+		margin-right: 10px;
 	}
 
 	.open-menu {
@@ -810,6 +811,8 @@ header {
 
 	.main-content {
 		position: absolute;
+		overflow-x: hidden;
+		/* padding-right: 2.5rem; */
 	}
 
 	/*Home*/
@@ -819,6 +822,10 @@ header {
 
 	.home-content {
 		max-width: 100%;
+	}
+
+	.home-img {
+		width: 60%;
 	}
 
 	.greetings-container {
@@ -882,7 +889,7 @@ header {
 		display: flex;
 		align-items: center;
 		margin: 0 auto;
-		max-width: 30%;
+		max-width: 40%;
 		border-radius: 10px;
 		padding: 15px;
 		font-size: 1.7rem;
@@ -1009,7 +1016,7 @@ header {
 	}
 	
 	.technology-box {
-		width: 30%;
+		width: 40%;
 	}
 	
 	.technology-box svg {
